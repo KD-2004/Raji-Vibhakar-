@@ -64,7 +64,7 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
   const progressPercent = step <= 3 ? (step / 3) * 100 : 100;
 
   return (
-    <section id="screening" className="content-auto py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
+    <section id="screening" className="py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         {/* Header */}
         <motion.div
