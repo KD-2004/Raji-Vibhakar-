@@ -19,7 +19,7 @@
   <!-- Services list -->
   <line x1="80" y1="415" x2="1120" y2="415" stroke="#134e4a" stroke-width="2"/>
   <text x="80" y="465" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600">Pure Tone Audiometry · Live Hearing Aid Trials · Speech Therapy · Stuttering · Aphasia</text>
-  <text x="80" y="505" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="20">Shop No. 1, Ramkunwar Thakur Marg, Opp. Pragati Hospital, Dahisar East, Mumbai</text>
+  <text x="80" y="505" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="20">Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Opp. Pragati Hospital, Mumbai 400068</text>
 
   <!-- Contact CTA -->
   <rect x="80" y="540" width="280" height="50" rx="12" fill="#0d9488"/>
