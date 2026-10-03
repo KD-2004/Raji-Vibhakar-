@@ -51,7 +51,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
               This Privacy Policy explains how <strong>{CLINIC_INFO.businessName}</strong>, led by <strong>{CLINIC_INFO.professionalName}</strong> ({CLINIC_INFO.professionalTitle}), handles contact details and technical telemetry collected through this website.
             </p>
             <p>
-              We adhere strictly to ethical patient confidentiality. We do not sell, rent, commercialize, or trade your personal information.
+              We aim to handle contact and appointment enquiry information responsibly and only use it for the purposes described in this policy. We do not sell or rent your personal information.
             </p>
           </section>
 
@@ -103,7 +103,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
               To ensure our website remains fast, accessible, and error-free, we collect aggregated, non-personally identifiable technical telemetry (such as page views and anonymized button clicks).
             </p>
             <p>
-              <strong>Strict Healthcare Privacy Standard:</strong> We enforce an allowlist that strictly prevents patient names, phone numbers, clinical descriptions, or medical symptoms from ever being captured in web analytics or URL parameters.
+              <strong>Analytics privacy:</strong> Our analytics code is limited to non-sensitive event information and does not send patient names, phone numbers, clinical descriptions, medical symptoms, or other appointment details to analytics.
             </p>
           </section>
 
