@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://rajvi-vibhakar.netlify.app/sitemap.xml
+Sitemap: https://rajvi-vibhakar.netlify.app/sitemap.txt
