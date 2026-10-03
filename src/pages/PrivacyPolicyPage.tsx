@@ -12,7 +12,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
   useEffect(() => {
     updatePageMeta(
       `Privacy Policy | Rajvi Vibhakar Speech & Hearing Clinic`,
-      `Privacy Policy for Rajvi Vibhakar Speech & Hearing Clinic in Dahisar East, Mumbai. Clear transparency regarding patient inquiry handling and WhatsApp messaging.`,
+      `Privacy Policy for Rajvi Vibhakar Speech & Hearing Clinic in Dahisar East, Mumbai. Information about appointment enquiries, WhatsApp messaging, and website analytics.`,
       `/privacy-policy`
     );
   }, []);
