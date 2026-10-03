@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BookOpen, ArrowRight, UserCheck } from 'lucide-react';
+import { BookOpen, ArrowRight } from 'lucide-react';
 import { HEALTH_INSIGHTS, CLINIC_INFO } from '../data/clinicData';
 import { updatePageMeta } from '../utils/router';
 import { Link } from '../components/Link';
@@ -13,7 +13,7 @@ export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate
   useEffect(() => {
     updatePageMeta(
       `Speech & Hearing Health Insights | Dahisar East Mumbai | Rajvi Vibhakar`,
-      `Clinical articles on hearing loss symptoms, childhood speech milestones, stuttering techniques, and post-stroke aphasia recovery. Reviewed by Rajvi Vibhakar Parikh.`,
+      `Educational articles on hearing health, childhood communication development, stuttering, and aphasia.`,
       `/insights`
     );
   }, []);
@@ -54,7 +54,7 @@ export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate
                 <span className="font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
                   {insight.category}
                 </span>
-                <span>{insight.readTime} · Reviewed {insight.lastReviewed}</span>
+                <span>{insight.readTime}</span>
               </div>
 
               <h2 className="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
@@ -72,11 +72,6 @@ export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate
               </p>
 
               <div className="pt-2 flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-t border-slate-100 text-xs">
-                <span className="text-slate-500 flex items-center gap-1.5">
-                  <UserCheck className="w-4 h-4 text-teal-600" />
-                  <span>{insight.reviewer}</span>
-                </span>
-
                 <Link
                   href={`/insights/${insight.slug}`}
                   onNavigate={onNavigate}
