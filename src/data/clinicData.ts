@@ -9,7 +9,7 @@
  * - Accurate state merit title: State Merit Rank 1 under MUHS in Motor Speech Disorders (2020)
  */
 
-export const CANONICAL_DOMAIN = 'https://rajvivibhakar.com';
+export const CANONICAL_DOMAIN = 'https://rajvi-vibhakar.netlify.app';
 
 export interface ServiceDetail {
   id: string;
