@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
 
             {/* Main Headline */}
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.18] [text-wrap:balance]">
-              Clear Hearing &amp; Confident Communication in Dahisar East
+              Audiologist &amp; Speech-Language Therapist in Dahisar East, Mumbai
             </h1>
 
             {/* Verified Business Description */}
