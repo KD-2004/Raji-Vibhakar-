@@ -47,7 +47,6 @@ const clinicSchema = {
   email: CLINIC_INFO.contact.email,
   url: `${CANONICAL_DOMAIN}/`,
   hasMap: CLINIC_INFO.location.googleMapsSearchUrl,
-  medicalSpecialty: ['Audiology', 'SpeechPathology'],
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Shop No. 1, Ramkunwar Thakur Marg, Krishna Colony',
