@@ -13,3 +13,11 @@
     color: #0f766e;
   }
 }
+
+
+@layer utilities {
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: 720px;
+  }
+}
