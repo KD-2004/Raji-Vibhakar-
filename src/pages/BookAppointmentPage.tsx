@@ -75,7 +75,7 @@ Thank you!`;
     <div className="bg-slate-50 py-10 sm:py-16">
       <div className="max-w-2xl mx-auto px-4 sm:px-6 space-y-8">
         {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500 flex items-center gap-1.5">
+        <nav aria-label="Breadcrumb" className="text-xs text-slate-600 flex items-center gap-1.5">
           <Link href="/" onNavigate={onNavigate} className="hover:text-teal-700 underline cursor-pointer">
             Home
           </Link>
@@ -150,7 +150,7 @@ Thank you!`;
                 Patient Full Name <span className="text-rose-500">*</span>
               </label>
               <div className="relative">
-                <User className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                <User className="w-4 h-4 text-slate-500 absolute left-3 top-3.5" />
                 <input
                   id="patient-full-name"
                   type="text"
@@ -188,7 +188,7 @@ Thank you!`;
                   Mobile / WhatsApp Number <span className="text-rose-500">*</span>
                 </label>
                 <div className="relative">
-                  <Phone className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                  <Phone className="w-4 h-4 text-slate-500 absolute left-3 top-3.5" />
                   <input
                     id="patient-contact-phone"
                     type="tel"
@@ -240,7 +240,7 @@ Thank you!`;
                   Preferred Date
                 </label>
                 <div className="relative">
-                  <Calendar className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                  <Calendar className="w-4 h-4 text-slate-500 absolute left-3 top-3.5" />
                   <input
                     id="patient-preferred-date"
                     type="date"
@@ -257,7 +257,7 @@ Thank you!`;
                   Preferred Time Slot
                 </label>
                 <div className="relative">
-                  <Clock className="w-4 h-4 text-slate-400 absolute left-3 top-3.5" />
+                  <Clock className="w-4 h-4 text-slate-500 absolute left-3 top-3.5" />
                   <select
                     id="patient-preferred-time"
                     value={preferredTime}
@@ -332,7 +332,7 @@ Thank you!`;
               </a>
             </div>
 
-            <div className="text-[11px] text-center text-slate-500 pt-1">
+            <div className="text-[11px] text-center text-slate-600 pt-1">
               Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Dahisar East, Mumbai
             </div>
           </form>
