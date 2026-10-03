@@ -509,7 +509,6 @@ export interface HealthInsight {
   title: string;
   category: 'Hearing Health' | 'Speech Therapy' | 'Child Development';
   readTime: string;
-  publishedDate: string;
   excerpt: string;
   keyTakeaways: string[];
   fullContent: string[];
@@ -524,7 +523,6 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     title: 'Recognizing Early Signs of High-Frequency Hearing Loss in Adults',
     category: 'Hearing Health',
     readTime: '4 min read',
-    publishedDate: '2026-10-01',
     excerpt: 'Hearing loss can develop gradually, and some people first notice reduced speech clarity, especially in noisy settings.',
     clinicalSources: [
       { title: 'American Speech-Language-Hearing Association (ASHA) — Hearing Loss in Adults', url: 'https://www.asha.org/practice-portal/clinical-topics/hearing-loss/' },
@@ -549,7 +547,6 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     title: 'Childhood Speech Development: Understanding Communication Milestones',
     category: 'Child Development',
     readTime: '5 min read',
-    publishedDate: '2026-10-01',
     excerpt: 'Developmental milestones can help families understand communication development and decide when to seek professional guidance.',
     clinicalSources: [
       { title: 'ASHA — Developmental Milestones: Birth to 5 Years', url: 'https://www.asha.org/public/developmental-milestones/' },
@@ -574,7 +571,6 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     title: 'Understanding Stuttering: Clinical Concepts and Fluency Strategies',
     category: 'Speech Therapy',
     readTime: '4 min read',
-    publishedDate: '2026-10-01',
     excerpt: 'Stuttering involves interruptions in the flow of speech and can affect communication in different ways across the lifespan.',
     clinicalSources: [
       { title: 'ASHA — Stuttering, Cluttering, and Fluency', url: 'https://www.asha.org/practice-portal/clinical-topics/fluency-disorders' },
@@ -599,7 +595,6 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     title: 'Aphasia After Stroke: Pathways to Language Rehabilitation',
     category: 'Speech Therapy',
     readTime: '5 min read',
-    publishedDate: '2026-10-01',
     excerpt: 'Aphasia is an acquired language disorder that can affect speaking, understanding, reading, and writing, including after stroke.',
     clinicalSources: [
       { title: 'ASHA — Aphasia', url: 'https://www.asha.org/practice-portal/clinical-topics/aphasia/' },
