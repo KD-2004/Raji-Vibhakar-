@@ -42,4 +42,53 @@ jobs:
           test -f dist/insights/index.html
           test -f dist/stuttering-therapy/index.html
           test -f dist/insights/stuttering/index.html
-          echo "Static SEO output checks passed."
+          node <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+
+          const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
+          const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+
+          if (urls.length !== 24) {
+            throw new Error(`Expected 24 canonical sitemap URLs, found ${urls.length}`);
+          }
+
+          const htmlFiles = [];
+          function walk(dir) {
+            for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+              const full = path.join(dir, entry.name);
+              if (entry.isDirectory()) walk(full);
+              else if (entry.name.endsWith('.html')) htmlFiles.push(full);
+            }
+          }
+          walk('dist');
+
+          const banned = [
+            'priceRange',
+            'paymentAccepted',
+            'currenciesAccepted',
+            'MedicalProcedure',
+            'FAQPage',
+            'procedureType',
+            'sameAs',
+            'share.google',
+            'appointment_success',
+            'Free Live Hearing Aid Trial',
+            'State Rank 1 Specialization',
+            'reviewedBy'
+          ];
+
+          const violations = [];
+          for (const file of htmlFiles) {
+            const html = fs.readFileSync(file, 'utf8');
+            for (const token of banned) {
+              if (html.includes(token)) violations.push(`${file}: ${token}`);
+            }
+          }
+
+          if (violations.length) {
+            throw new Error('Production SEO validation failed:\n' + violations.join('\n'));
+          }
+
+          console.log(`Static SEO validation passed: ${urls.length} sitemap URLs, ${htmlFiles.length} HTML files.`);
+          NODE
