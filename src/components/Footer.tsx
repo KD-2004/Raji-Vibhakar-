@@ -40,7 +40,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onNavigate }) => 
             </div>
 
             <p className="text-slate-400 leading-relaxed pr-4 text-xs">
-              Audiology services, Pure Tone Audiometry hearing assessments, live digital hearing aid trials, and speech-language therapy in Dahisar East, Mumbai.
+              Audiology services, Pure Tone Audiometry hearing assessments, live digital hearing aid trials, and speech-language therapy by Rajvi Vibhakar.
             </p>
 
             <div className="text-[11px] text-slate-400 space-y-0.5">
@@ -126,7 +126,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onNavigate }) => 
           {/* Col 4: Clinic Location & Contact */}
           <div className="md:col-span-3 space-y-3">
             <div className="font-semibold text-white uppercase tracking-wider text-[11px]">
-              Dahisar East Clinic
+              Rajvi Vibhakar’s Speech &amp; Hearing Clinic
             </div>
             <div className="space-y-2.5 text-xs text-slate-400">
               <div className="flex items-start gap-2">
