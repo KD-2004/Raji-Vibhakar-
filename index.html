@@ -27,6 +27,7 @@
     <meta property="og:image" content="https://rajvivibhakar.com/og-image.svg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Rajvi Vibhakar Speech & Hearing Clinic in Dahisar East, Mumbai" />
 
     <!-- Twitter / X Cards -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -41,95 +42,108 @@
 
     <!-- Schema.org JSON-LD Structured Data (Spec Section 5: No physician, no fake reviews, canonical domain) -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@graph": [
+      "@type": [
+        "LocalBusiness",
+        "MedicalBusiness"
+      ],
+      "@id": "https://rajvivibhakar.com/#clinic",
+      "name": "Rajvi Vibhakar Speech & Hearing Clinic",
+      "alternateName": "Rajvi Vibhakar Speech & Hearing",
+      "description": "Audiology and speech-language therapy practice in Dahisar East, Mumbai.",
+      "image": "https://rajvivibhakar.com/og-image.svg",
+      "telephone": "+918898330707",
+      "email": "rajvivibhakar@gmail.com",
+      "url": "https://rajvivibhakar.com/",
+      "hasMap": "https://maps.app.goo.gl/PyJNyyxjWgHZ6Yar9?g_st=ac",
+      "medicalSpecialty": [
+        "Audiology",
+        "SpeechPathology"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Shop No. 1, Ramkunwar Thakur Marg, Krishna Colony",
+        "addressLocality": "Mumbai",
+        "addressRegion": "Maharashtra",
+        "postalCode": "400068",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
         {
-          "@type": ["LocalBusiness", "MedicalBusiness"],
-          "@id": "https://rajvivibhakar.com/#clinic",
-          "name": "Rajvi Vibhakar Speech & Hearing Clinic",
-          "alternateName": "Rajvi Vibhakar Audiology & Speech-Language Therapy",
-          "description": "Audiology and speech-language therapy practice in Dahisar East, Mumbai. Providing Pure Tone Audiometry, middle ear testing, live digital hearing aid trials, childhood speech delay, stuttering fluency, and post-stroke aphasia recovery.",
-          "image": "https://rajvivibhakar.com/og-image.svg",
-          "telephone": "+918898330707",
-          "email": "rajvivibhakar@gmail.com",
-          "url": "https://rajvivibhakar.com/",
-          "hasMap": "https://maps.app.goo.gl/PyJNyyxjWgHZ6Yar9?g_st=ac",
-          "sameAs": [
-            "https://maps.app.goo.gl/PyJNyyxjWgHZ6Yar9?g_st=ac"
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
           ],
-          "priceRange": "₹₹",
-          "currenciesAccepted": "INR",
-          "paymentAccepted": "Cash, Credit Card, UPI, Google Pay, PhonePe",
-          "medicalSpecialty": [
-            "Audiology",
-            "SpeechPathology"
-          ],
-          "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Krishna Colony",
-            "addressLocality": "Dahisar East, Mumbai",
-            "addressRegion": "Maharashtra",
-            "postalCode": "400068",
-            "addressCountry": "IN"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 19.2562,
-            "longitude": 72.8622
-          },
-          "openingHoursSpecification": [
-            {
-              "@type": "OpeningHoursSpecification",
-              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-              "opens": "09:00",
-              "closes": "20:00"
-            }
-          ],
-          "areaServed": [
-            { "@type": "City", "name": "Dahisar East" },
-            { "@type": "City", "name": "Dahisar West" },
-            { "@type": "City", "name": "Borivali" },
-            { "@type": "City", "name": "Mira Road" },
-            { "@type": "City", "name": "Kandivali" },
-            { "@type": "City", "name": "Mumbai" }
-          ],
-          "availableService": [
-            { "@type": "MedicalProcedure", "name": "Pure Tone Audiometry (Hearing Test)" },
-            { "@type": "MedicalProcedure", "name": "Impedance Audiometry & Tympanometry" },
-            { "@type": "MedicalProcedure", "name": "Live Digital Hearing Aid Trial" },
-            { "@type": "MedicalProcedure", "name": "Speech and Language Therapy" },
-            { "@type": "MedicalProcedure", "name": "Stuttering and Fluency Therapy" },
-            { "@type": "MedicalProcedure", "name": "Post-Stroke Aphasia Rehabilitation" },
-            { "@type": "MedicalProcedure", "name": "Motor Speech Disorders (Dysarthria) Therapy" }
-          ]
+          "opens": "09:00",
+          "closes": "20:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "Place",
+          "name": "Dahisar East"
         },
         {
-          "@type": "Person",
-          "@id": "https://rajvivibhakar.com/#practitioner",
-          "name": "Rajvi Vibhakar Parikh",
-          "jobTitle": "Audiologist & Speech-Language Pathologist",
-          "alumniOf": {
-            "@type": "EducationalOrganization",
-            "name": "Ali Yawar Jung National Institute of Speech and Hearing Disabilities (Divyangjan) - AYJNISHD, Mumbai"
-          },
-          "award": "State Merit Rank 1 under MUHS in Motor Speech Disorders (2020)",
-          "knowsLanguage": ["en", "gu", "hi", "mr"],
-          "worksFor": {
-            "@id": "https://rajvivibhakar.com/#clinic"
-          }
+          "@type": "Place",
+          "name": "Dahisar West"
         },
         {
-          "@type": "WebSite",
-          "@id": "https://rajvivibhakar.com/#website",
-          "url": "https://rajvivibhakar.com/",
-          "name": "Rajvi Vibhakar Speech & Hearing",
-          "publisher": {
-            "@id": "https://rajvivibhakar.com/#clinic"
-          }
+          "@type": "Place",
+          "name": "Borivali"
+        },
+        {
+          "@type": "Place",
+          "name": "Mira Road"
+        },
+        {
+          "@type": "Place",
+          "name": "Kandivali"
+        },
+        {
+          "@type": "City",
+          "name": "Mumbai"
         }
       ]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://rajvivibhakar.com/#practitioner",
+      "name": "Rajvi Vibhakar Parikh",
+      "jobTitle": "Audiologist & Speech-Language Therapist",
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Ali Yawar Jung National Institute of Speech and Hearing Disabilities (Divyangjan) - AYJNISHD, Mumbai"
+      },
+      "award": "State Merit Rank 1 under MUHS in Motor Speech Disorders (2020)",
+      "knowsLanguage": [
+        "en",
+        "gu",
+        "hi",
+        "mr"
+      ],
+      "worksFor": {
+        "@id": "https://rajvivibhakar.com/#clinic"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://rajvivibhakar.com/#website",
+      "url": "https://rajvivibhakar.com/",
+      "name": "Rajvi Vibhakar Speech & Hearing",
+      "publisher": {
+        "@id": "https://rajvivibhakar.com/#clinic"
+      }
     }
+  ]
+}
     </script>
   </head>
   <body>
