@@ -79,16 +79,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
           href="/"
           onNavigate={handleLinkClick}
           className="flex items-center gap-2 sm:gap-3 group shrink min-w-0 text-left"
-          aria-label="Rajvi Vibhakar’s Speech &amp; Hearing Clinic"
+          aria-label={CLINIC_INFO.businessName}
         >
           <ClinicLogo size="md" priority />
           <div className="flex flex-col min-w-0">
             <span className="font-bold text-slate-900 text-sm sm:text-base md:text-lg tracking-tight group-hover:text-teal-700 transition-colors truncate">
-              <span className="sm:hidden">Rajvi Vibhakar’s Clinic</span>
+              <span className="sm:hidden">{CLINIC_INFO.businessName}</span>
               <span className="hidden sm:inline">{CLINIC_INFO.businessName}</span>
             </span>
             <span className="text-[10px] sm:text-[11px] font-medium text-teal-700 tracking-wide truncate">
-              <span className="sm:hidden">Rajvi Vibhakar’s Speech &amp; Hearing</span>
+              <span className="sm:hidden">{CLINIC_INFO.siteName}</span>
               <span className="hidden sm:inline">Rajvi Vibhakar Parikh (BASLP, AYJNISHD)</span>
             </span>
           </div>
