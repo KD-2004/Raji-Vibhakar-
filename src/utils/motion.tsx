@@ -1,17 +1,5 @@
 import React from 'react';
 
-type MotionOnlyProps = {
-  initial?: unknown;
-  animate?: unknown;
-  exit?: unknown;
-  transition?: unknown;
-  whileHover?: unknown;
-  whileTap?: unknown;
-  whileInView?: unknown;
-  viewport?: unknown;
-  layoutId?: unknown;
-};
-
 const MOTION_PROPS = new Set([
   'initial',
   'animate',
@@ -25,19 +13,17 @@ const MOTION_PROPS = new Set([
 ]);
 
 function createMotionComponent(tag: 'div' | 'button' | 'a' | 'article') {
-  return React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement> & MotionOnlyProps>(
-    (props, ref) => {
-      const domProps: Record<string, unknown> = {};
+  return React.forwardRef<any, any>((props, ref) => {
+    const domProps: Record<string, unknown> = {};
 
-      for (const [key, value] of Object.entries(props)) {
-        if (!MOTION_PROPS.has(key)) {
-          domProps[key] = value;
-        }
+    for (const [key, value] of Object.entries(props)) {
+      if (!MOTION_PROPS.has(key)) {
+        domProps[key] = value;
       }
+    }
 
-      return React.createElement(tag, { ...domProps, ref });
-    },
-  );
+    return React.createElement(tag, { ...domProps, ref });
+  });
 }
 
 export const motion = {
