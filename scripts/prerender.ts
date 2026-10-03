@@ -202,7 +202,7 @@ routes.push({
 routes.push({
   path: '/insights',
   outputPath: path.join(DIST_DIR, 'insights', 'index.html'),
-  title: `Clinical Insights & Articles on Hearing & Speech Care | Dahisar East`,
+  title: `Hearing & Speech Health Insights | Dahisar East | Rajvi Vibhakar`,
   description: `Educational articles and guidance on hearing health, childhood communication development, stuttering, and aphasia.`,
   schema: {
     '@context': 'https://schema.org',
@@ -233,7 +233,6 @@ for (const insight of HEALTH_INSIGHTS) {
           headline: insight.title,
           description: insight.excerpt,
           url: `${CANONICAL_DOMAIN}/insights/${insight.slug}`,
-          datePublished: insight.publishedDate,
           publisher: {
             '@type': 'MedicalBusiness',
             name: CLINIC_INFO.businessName,
