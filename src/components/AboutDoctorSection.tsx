@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from '../utils/motion';
 import { Award, GraduationCap, Building2, Globe, CheckCircle2, HeartHandshake, ArrowRight } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import { ClinicLogo } from './ClinicLogo';
