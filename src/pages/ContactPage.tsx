@@ -16,7 +16,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
 
   useEffect(() => {
     updatePageMeta(
-      `Contact & Clinic Location in Dahisar East | Rajvi Vibhakar Speech & Hearing`,
+      `Contact Clinic in Dahisar East, Mumbai | Rajvi Vibhakar Speech & Hearing`,
       `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Dahisar East, Mumbai 400068. Call 8898330707.`,
       `/contact`
     );
