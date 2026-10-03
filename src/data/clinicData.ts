@@ -41,10 +41,10 @@ export const CLINIC_INFO = {
     email: "rajvivibhakar@gmail.com",
   },
   location: {
-    shopAndStreet: "Shop No. 1, Ramkunwar Thakur Marg",
-    landmark: "Opp. Pragati Hospital, Krishna Colony",
-    area: "Dahisar East, Mumbai, Maharashtra 400068",
-    fullAddress: "Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Krishna Colony, Dahisar East, Mumbai, Maharashtra 400068, India",
+    shopAndStreet: "Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road",
+    landmark: "Opp. Pragati Hospital",
+    area: "Dahisar East, Mumbai 400068",
+    fullAddress: "Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Opp. Pragati Hospital, Mumbai 400068",
     // Official Google Maps & Google Business Profile location URL
     googleMapsSearchUrl: "https://maps.app.goo.gl/PyJNyyxjWgHZ6Yar9?g_st=ac",
     officialGbpUrl: "https://maps.app.goo.gl/PyJNyyxjWgHZ6Yar9?g_st=ac",
@@ -103,7 +103,7 @@ export const CLINIC_INFO = {
     },
     {
       title: "Dahisar East Clinic Location",
-      description: "Located opposite Pragati Hospital on Ramkunwar Thakur Marg in Krishna Colony, Dahisar East.",
+      description: "Located in Rajaram Mahtre Welfare Association on R.T. Road in Dahisar East, opposite Pragati Hospital.",
     },
   ],
 };
@@ -483,7 +483,7 @@ export const FAQS = [
   },
   {
     question: "Where is the clinic located in Dahisar East?",
-    answer: "The clinic is located at Shop No. 1, Ramkunwar Thakur Marg, opposite Pragati Hospital, Krishna Colony, Dahisar East, Mumbai 400068.",
+    answer: "The clinic is located at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068.",
   },
   {
     question: "Do I need to book an appointment prior to visiting?",
