@@ -91,10 +91,7 @@ export const LocationSection: React.FC = () => {
                     {CLINIC_INFO.displayBusinessName}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-semibold">
-                    {CLINIC_INFO.location.shopAndStreet}
-                  </p>
-                  <p className="text-xs text-slate-600">
-                    {CLINIC_INFO.location.landmark}, {CLINIC_INFO.location.area}
+                    {CLINIC_INFO.location.fullAddress}
                   </p>
                 </div>
               </div>
