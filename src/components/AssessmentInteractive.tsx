@@ -290,7 +290,7 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
                   </button>
 
                   <a
-                    href={`${CLINIC_INFO.contact.whatsappLink}?text=${encodeURIComponent(`Hello Rajvi Vibhakar Speech & Hearing Clinic, I completed the screening check on your website. My concern is: ${concern}, for ${ageGroup}. I would like to schedule a consultation at your Dahisar East clinic.`)}`}
+                    href={`${CLINIC_INFO.contact.whatsappLink}?text=${encodeURIComponent(`Hello Rajvi Vibhakar’s Speech & Hearing Clinic, I completed the screening check on your website. My concern is: ${concern}, for ${ageGroup}. I would like to schedule a consultation at Rajvi Vibhakar’s Speech & Hearing Clinic.`)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => trackEvent('whatsapp_click', { source: 'screening_whatsapp' })}
