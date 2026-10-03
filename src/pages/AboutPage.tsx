@@ -16,7 +16,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBooking 
   useEffect(() => {
     updatePageMeta(
       `About Rajvi Vibhakar Parikh | Audiologist & Speech-Language Therapist Dahisar East`,
-      `Verified clinical background of Rajvi Vibhakar Parikh (BASLP, AYJNISHD), State Merit Rank 1 in Motor Speech Disorders (2020). Audiology & speech therapy in Dahisar East, Mumbai.`,
+      `Learn about Rajvi Vibhakar Parikh (BASLP, AYJNISHD Mumbai), State Merit Rank 1 under MUHS in Motor Speech Disorders (2020), clinical experience, and multilingual care.`,
       `/about`
     );
   }, []);
