@@ -13,7 +13,7 @@ export const HealthInsightsSection: React.FC<HealthInsightsSectionProps> = ({
   onNavigate,
 }) => {
   return (
-    <section id="insights" className="py-16 md:py-24 bg-slate-50 border-b border-slate-200 overflow-hidden">
+    <section id="insights" className="content-auto py-16 md:py-24 bg-slate-50 border-b border-slate-200 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12">
