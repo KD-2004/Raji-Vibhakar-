@@ -108,7 +108,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
 
             {/* Verified Business Description */}
             <p className="text-xs sm:text-base lg:text-lg text-slate-600 leading-relaxed max-w-2xl">
-              Welcome to <strong className="text-slate-900 font-semibold">{CLINIC_INFO.businessName}</strong>. Led by <strong className="text-slate-900 font-semibold">{CLINIC_INFO.professionalName}</strong> ({CLINIC_INFO.professionalTitle}, State Merit Rank 1 in Motor Speech Disorders, BASLP AYJNISHD). Providing diagnostic hearing assessments, live digital hearing aid trials, and speech therapy for children, adults, and seniors.
+              Welcome to <strong className="text-slate-900 font-semibold">{CLINIC_INFO.displayBusinessName}</strong>. Led by <strong className="text-slate-900 font-semibold">{CLINIC_INFO.professionalName}</strong> ({CLINIC_INFO.professionalTitle}, State Merit Rank 1 in Motor Speech Disorders, BASLP AYJNISHD). Providing diagnostic hearing assessments, live digital hearing aid trials, and speech therapy for children, adults, and seniors.
             </p>
 
             {/* 2 Primary Service Cards with crawlable Links and hover micro-animations */}
@@ -158,7 +158,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-xs sm:text-sm font-semibold text-white bg-teal-700 hover:bg-teal-800 rounded-xl shadow-md shadow-teal-900/15 transition-all cursor-pointer min-h-[46px]"
               >
                 <Calendar className="w-4 h-4 shrink-0" />
-                <span>Book Clinic Appointment</span>
+                <span>Book Rajvi Vibhakar’s Clinic Appointment</span>
               </motion.button>
 
               <motion.a
@@ -180,7 +180,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                 href={`tel:${CLINIC_INFO.contact.phone}`}
                 onClick={() => trackEvent('phone_click', { source: 'hero_phone' })}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3.5 text-xs sm:text-sm font-semibold text-slate-700 hover:text-slate-900 bg-white hover:bg-slate-50 border border-slate-200 rounded-xl transition-all cursor-pointer min-h-[46px]"
-                title="Call Clinic"
+                title="Call Rajvi Vibhakar’s Clinic"
               >
                 <Phone className="w-4 h-4 text-teal-600 shrink-0" />
                 <span>Call 8898330707</span>
