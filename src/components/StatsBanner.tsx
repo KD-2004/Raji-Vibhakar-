@@ -26,7 +26,7 @@ export const StatsBanner: React.FC = () => {
     },
     {
       icon: <MapPin className="w-5 h-5 text-emerald-600" />,
-      tag: "Dahisar East, Mumbai",
+      tag: "Rajvi Vibhakar’s Speech & Hearing",
       title: "Opp. Pragati Hospital",
       desc: "Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road. Opp. Pragati Hospital, Dahisar East.",
       check: "Direct Physical Clinic",
@@ -54,7 +54,7 @@ export const StatsBanner: React.FC = () => {
               <span>Clinical Quality &amp; Patient Standards</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900 tracking-tight">
-              Why Patients Trust Our Dahisar East Practice
+              Why Patients Trust Rajvi Vibhakar’s Practice
             </h2>
           </div>
 
