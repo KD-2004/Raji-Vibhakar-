@@ -106,9 +106,9 @@ const routes: RouteSEO[] = [];
 routes.push({
   path: '/',
   outputPath: path.join(DIST_DIR, 'index.html'),
-  title: 'Audiologist & Speech-Language Therapist in Dahisar East, Mumbai | Rajvi Vibhakar',
+  title: 'Audiologist & Speech-Language Therapist | Rajvi Vibhakar',
   description:
-    'Audiologist and speech-language therapist in Dahisar East, Mumbai for hearing problems, hearing tests, hearing loss assessments, hearing aid trials and speech-language therapy for children and adults. Call 8898330707.',
+    'Rajvi Vibhakar provides audiology and speech-language therapy for hearing problems, hearing tests, hearing loss assessments, hearing aid trials and speech-language therapy for children and adults. Call 8898330707.',
   schema: {
     '@context': 'https://schema.org',
     '@graph': [clinicSchema, practitionerSchema, websiteSchema],
@@ -119,7 +119,7 @@ routes.push({
 routes.push({
   path: '/about',
   outputPath: path.join(DIST_DIR, 'about', 'index.html'),
-  title: `About Rajvi Vibhakar Parikh | Audiologist & Speech-Language Therapist Dahisar East`,
+  title: `About Rajvi Vibhakar Parikh | Audiologist & Speech-Language Therapist`,
   description: `Learn about Rajvi Vibhakar Parikh (BASLP, AYJNISHD Mumbai), State Merit Rank 1 under MUHS in Motor Speech Disorders (2020), clinical experience, and multilingual care.`,
   schema: {
     '@context': 'https://schema.org',
@@ -140,8 +140,8 @@ routes.push({
 routes.push({
   path: '/contact',
   outputPath: path.join(DIST_DIR, 'contact', 'index.html'),
-  title: `Contact Clinic in Dahisar East, Mumbai | Rajvi Vibhakar Speech & Hearing`,
-  description: `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068. Call 8898330707.`,
+  title: `Contact Rajvi Vibhakar’s Speech & Hearing Clinic | Mumbai`,
+  description: `Visit Rajvi Vibhakar’s Speech & Hearing Clinic at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, opposite Pragati Hospital, Mumbai 400068. Call 8898330707.`,
   schema: {
     '@context': 'https://schema.org',
     '@graph': [
@@ -161,8 +161,8 @@ routes.push({
 routes.push({
   path: '/book-appointment',
   outputPath: path.join(DIST_DIR, 'book-appointment', 'index.html'),
-  title: `Book Consultation | Hearing Test & Speech Therapy in Dahisar East`,
-  description: `Reserve your hearing test, digital hearing aid trial, or speech-language therapy consultation at our Dahisar East clinic. Call or WhatsApp 8898330707.`,
+  title: `Book Consultation | Hearing Test & Speech Therapy | Rajvi Vibhakar`,
+  description: `Reserve your hearing test, digital hearing aid trial, or speech-language therapy consultation at Rajvi Vibhakar’s Speech & Hearing Clinic. Call or WhatsApp 8898330707.`,
   schema: {
     '@context': 'https://schema.org',
     '@graph': [
@@ -201,7 +201,7 @@ routes.push({
 routes.push({
   path: '/insights',
   outputPath: path.join(DIST_DIR, 'insights', 'index.html'),
-  title: `Hearing & Speech Health Insights | Dahisar East | Rajvi Vibhakar`,
+  title: `Hearing & Speech Health Insights | Rajvi Vibhakar`,
   description: `Educational articles and guidance on hearing health, childhood communication development, stuttering, and aphasia.`,
   schema: {
     '@context': 'https://schema.org',
@@ -290,7 +290,7 @@ routes.push({
   path: '/404',
   outputPath: path.join(DIST_DIR, '404.html'),
   title: 'Page Not Found (404) | Rajvi Vibhakar Speech & Hearing',
-  description: 'The requested page could not be found. Explore audiology services, hearing assessments, and speech therapy in Dahisar East, Mumbai.',
+  description: 'The requested page could not be found. Explore audiology services, hearing assessments, and speech therapy from Rajvi Vibhakar’s Speech & Hearing Clinic.',
   schema: {
     '@context': 'https://schema.org',
     '@type': 'WebPage',
