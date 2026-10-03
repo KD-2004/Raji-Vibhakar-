@@ -17,7 +17,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
   useEffect(() => {
     updatePageMeta(
       `Contact Clinic in Dahisar East, Mumbai | Rajvi Vibhakar Speech & Hearing`,
-      `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Dahisar East, Mumbai 400068. Call 8898330707.`,
+      `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068. Call 8898330707.`,
       `/contact`
     );
   }, []);
@@ -42,7 +42,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
             Clinic Contact &amp; Location Information
           </h1>
           <p className="text-sm sm:text-base text-slate-600 max-w-2xl">
-            Located in Krishna Colony, directly opposite Pragati Hospital on Ramkunwar Thakur Marg in Dahisar East. We welcome inquiries and appointment bookings.
+            Located in Rajaram Mahtre Welfare Association on R.T. Road, directly opposite Pragati Hospital in Dahisar East. We welcome inquiries and appointment bookings.
           </p>
         </header>
 
@@ -63,7 +63,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                       {loc.fullAddress}
                     </div>
                     <div className="text-xs text-teal-800 font-medium mt-1">
-                      Landmark: Opp. Pragati Hospital, Krishna Colony
+                      Landmark: Opp. Pragati Hospital
                     </div>
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                   </span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                  Open directions on your navigation app to travel directly to our clinic on Ramkunwar Thakur Marg opposite Pragati Hospital in Dahisar East.
+                  Open directions on your navigation app to travel directly to our clinic on R.T. Road, opposite Pragati Hospital in Dahisar East.
                 </p>
 
                 {/* Clear Location Box */}
