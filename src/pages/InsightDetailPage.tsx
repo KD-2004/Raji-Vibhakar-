@@ -52,7 +52,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
             <span className="text-slate-400">·</span>
             <span className="text-slate-500">{insight.readTime}</span>
             <span className="text-slate-400">·</span>
-            <span className="text-slate-500">Published {insight.publishedDate}</span>
+            <span className="text-slate-500">Educational resource</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
@@ -65,7 +65,6 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
               <BookOpen className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
               <div>
                 <div className="font-semibold text-slate-900">Educational health article</div>
-                <div className="text-slate-600 mt-0.5">Published: {insight.publishedDate}</div>
                 <div className="text-[11px] text-slate-500 mt-1">
                   General information only. This article does not replace an individual clinical evaluation.
                 </div>
@@ -74,7 +73,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
 
           {/* Clinical Evidence Sources */}
             <div className="pt-2 border-t border-slate-200/80 text-[11px] text-slate-600">
-              <span className="font-semibold text-slate-800 block mb-1">Clinical Sources &amp; Literature:</span>
+              <span className="font-semibold text-slate-800 block mb-1">Sources &amp; Further Reading:</span>
               <ul className="list-disc pl-4 space-y-0.5">
                 {insight.clinicalSources.map((source, idx) => (
                   <li key={idx}>
@@ -95,7 +94,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
         {/* Key Takeaways Box */}
         <section className="bg-teal-50/70 rounded-2xl p-6 border border-teal-200 space-y-3">
           <h2 className="text-sm font-bold text-teal-950 uppercase tracking-wider">
-            Clinical Key Takeaways
+            Key Takeaways
           </h2>
           <ul className="space-y-2 text-xs sm:text-sm text-teal-900">
             {insight.keyTakeaways.map((point, idx) => (
