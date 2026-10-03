@@ -62,7 +62,7 @@ Preferred Time: ${preferredTime}
 Consultation Language: ${language}
 ${notes ? `Notes / Clinical Concern: ${notes}` : ''}
 
-Clinic Address: Shop 1, Ramkunwar Thakur Marg, Opp. Pragati Hospital, Dahisar East, Mumbai
+Clinic Address: Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Opp. Pragati Hospital, Mumbai 400068
 Thank you!`;
 
     const waUrl = `${CLINIC_INFO.contact.whatsappLink}?text=${encodeURIComponent(message)}`;
@@ -114,7 +114,7 @@ Thank you!`;
               <div><strong>Patient:</strong> {patientName}</div>
               <div><strong>Service:</strong> {selectedService}</div>
               <div><strong>Preferred Slot:</strong> {preferredDate || 'Earliest available'} ({preferredTime.split(' ')[0]})</div>
-              <div><strong>Location:</strong> Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Dahisar East</div>
+              <div><strong>Location:</strong> Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Opp. Pragati Hospital, Mumbai 400068</div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
@@ -333,7 +333,7 @@ Thank you!`;
             </div>
 
             <div className="text-[11px] text-center text-slate-600 pt-1">
-              Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Dahisar East, Mumbai
+              Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Opp. Pragati Hospital, Mumbai 400068
             </div>
           </form>
         )}
