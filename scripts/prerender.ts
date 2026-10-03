@@ -49,7 +49,7 @@ const clinicSchema = {
   hasMap: CLINIC_INFO.location.googleMapsSearchUrl,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: 'Shop No. 1, Ramkunwar Thakur Marg, Krishna Colony',
+    streetAddress: 'Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road',
     addressLocality: 'Mumbai',
     addressRegion: 'Maharashtra',
     postalCode: '400068',
@@ -141,7 +141,7 @@ routes.push({
   path: '/contact',
   outputPath: path.join(DIST_DIR, 'contact', 'index.html'),
   title: `Contact Clinic in Dahisar East, Mumbai | Rajvi Vibhakar Speech & Hearing`,
-  description: `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Ramkunwar Thakur Marg, opposite Pragati Hospital, Dahisar East, Mumbai 400068. Call 8898330707.`,
+  description: `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068. Call 8898330707.`,
   schema: {
     '@context': 'https://schema.org',
     '@graph': [
