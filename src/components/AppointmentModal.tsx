@@ -82,7 +82,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
     trackEvent('appointment_submit', { method: 'whatsapp', service_name: selectedService });
 
     const text = `Hello ${CLINIC_INFO.businessName},
-I would like to book an appointment at your Dahisar East clinic.
+I would like to book an appointment at Rajvi Vibhakar’s Speech & Hearing Clinic.
 
 Patient Name: ${patientName}
 Age Group: ${ageGroup}
@@ -138,7 +138,7 @@ Thank you!`;
               {/* Header */}
               <div>
                 <div className="flex items-center gap-1.5 text-[11px] font-bold text-teal-700 uppercase tracking-wider mb-1">
-                  <span>Dahisar East Clinic</span>
+                  <span>Rajvi Vibhakar’s Speech &amp; Hearing Clinic</span>
                   <span>·</span>
                   <span>Appointment Request</span>
                 </div>
@@ -384,7 +384,7 @@ Thank you!`;
                 </div>
                 <div className="flex justify-between">
                   <span className="text-slate-500">Clinic Location:</span>
-                  <span className="font-semibold text-teal-800">Dahisar East, Opp. Pragati Hospital</span>
+                  <span className="font-semibold text-teal-800">Rajvi Vibhakar’s Speech &amp; Hearing Clinic</span>
                 </div>
               </div>
 
