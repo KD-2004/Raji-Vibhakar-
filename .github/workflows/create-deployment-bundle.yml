@@ -1,0 +1,25 @@
+name: Create Deployment Bundle
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Create source bundle
+        run: |
+          zip -r site-source.zip . -x ".git/*"
+      - name: Upload source bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-source-bundle
+          path: site-source.zip
+          retention-days: 1
