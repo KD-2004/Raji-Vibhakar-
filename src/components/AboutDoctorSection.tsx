@@ -11,7 +11,7 @@ interface AboutSectionProps {
 
 export const AboutDoctorSection: React.FC<AboutSectionProps> = ({ onNavigate }) => {
   return (
-    <section id="about" className="py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
+    <section id="about" className="content-auto py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column: Practitioner Profile Card */}
