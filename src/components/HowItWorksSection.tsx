@@ -15,7 +15,7 @@ export const HowItWorksSection: React.FC<HowItWorksProps> = ({ onOpenBooking }) 
   ];
 
   return (
-    <section id="how-it-works" className="py-16 md:py-20 bg-slate-50/70 border-b border-slate-200 overflow-hidden">
+    <section id="how-it-works" className="content-auto py-16 md:py-20 bg-slate-50/70 border-b border-slate-200 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
