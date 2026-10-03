@@ -124,7 +124,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-slate-900">Speech &amp; Language Therapy</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">Misarticulation, stuttering, aphasia, voice therapy</div>
+                    <div className="text-[11px] text-slate-600 mt-0.5">Misarticulation, stuttering, aphasia, voice therapy</div>
                   </div>
                 </Link>
               </motion.div>
@@ -140,7 +140,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                   </div>
                   <div>
                     <div className="text-xs font-bold text-slate-900">Audiology &amp; Hearing Aids</div>
-                    <div className="text-[11px] text-slate-500 mt-0.5">Pure tone tests &amp; live digital hearing aid trials</div>
+                    <div className="text-[11px] text-slate-600 mt-0.5">Pure tone tests &amp; live digital hearing aid trials</div>
                   </div>
                 </Link>
               </motion.div>
@@ -302,7 +302,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                     ))}
                   </ul>
 
-                  <div className="flex items-center justify-between text-[11px] text-slate-500 pt-1 border-t border-slate-100">
+                  <div className="flex items-center justify-between text-[11px] text-slate-600 pt-1 border-t border-slate-100">
                     <span className="flex items-center gap-1 font-medium text-slate-700">
                       <Clock className="w-3 h-3 text-teal-600" />
                       Duration: {current.duration}
