@@ -28,6 +28,7 @@ export interface ServiceDetail {
 
 export const CLINIC_INFO = {
   businessName: "Rajvi Vibhakar’s Speech & Hearing Clinic",
+  displayBusinessName: "Rajvi Vibhakar’s Speech & Hearing Clinic",
   siteName: "Rajvi Vibhakar’s Speech & Hearing",
   tagline: "Audiology, Hearing Aid Trials & Speech-Language Therapy by Rajvi Vibhakar",
   professionalName: "Rajvi Vibhakar Parikh",
