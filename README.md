@@ -9,7 +9,7 @@ Production website for Rajvi Vibhakar Parikh, Audiologist & Speech-Language Ther
 - Phone: +91 8898330707
 - Email: rajvivibhakar@gmail.com
 - Address: Shop No. 1, Ramkunwar Thakur Marg, Opp. Pragati Hospital, Krishna Colony, Dahisar East, Mumbai, Maharashtra 400068, India
-- Website: https://rajvivibhakar.com/
+- Website: https://rajvi-vibhakar.netlify.app/
 
 ## Build
 
@@ -44,7 +44,7 @@ The important pages are statically generated, so no blanket SPA rewrite is requi
 3. Verify `/robots.txt` and `/sitemap.xml`.
 4. Verify every service and article URL loads directly.
 5. Verify invalid URLs return the 404 page.
-6. Add and verify the domain in Google Search Console.
+6. Add and verify the site in Google Search Console using the live Netlify URL.
 7. Submit the sitemap.
 8. Inspect the homepage and priority service pages.
 9. Connect GA4 only after a real Measurement ID is available.
