@@ -30,7 +30,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
           <div className="flex items-center gap-2 text-xs font-semibold text-teal-700 tracking-wider uppercase mb-2">
             <span>Specialized Clinical Solutions</span>
             <span aria-hidden="true">·</span>
-            <span>Rajvi Vibhakar’s Speech &amp; Hearing</span>
+            <span>{CLINIC_INFO.siteName}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight [text-wrap:balance]">
             Speech Therapy &amp; Audiology Services Designed for Patients
