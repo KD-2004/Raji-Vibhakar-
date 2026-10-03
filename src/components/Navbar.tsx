@@ -81,7 +81,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
           className="flex items-center gap-2 sm:gap-3 group shrink min-w-0 text-left"
           aria-label="Rajvi Vibhakar Speech & Hearing Clinic"
         >
-          <ClinicLogo size="md" />
+          <ClinicLogo size="md" priority />
           <div className="flex flex-col min-w-0">
             <span className="font-bold text-slate-900 text-sm sm:text-base md:text-lg tracking-tight group-hover:text-teal-700 transition-colors truncate">
               <span className="sm:hidden">Rajvi Vibhakar Clinic</span>
