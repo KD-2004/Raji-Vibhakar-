@@ -52,7 +52,7 @@ export const HealthInsightsSection: React.FC<HealthInsightsSectionProps> = ({
               className="bg-white rounded-2xl p-6 border border-slate-200/90 hover:border-teal-300 hover:shadow-md transition-all flex flex-col justify-between"
             >
               <div className="space-y-4">
-                <div className="flex items-center justify-between text-xs text-slate-500">
+                <div className="flex items-center justify-between text-xs text-slate-600">
                   <span className="font-semibold text-teal-700 bg-teal-50 px-2.5 py-0.5 rounded-full border border-teal-200">
                     {insight.category}
                   </span>
