@@ -12,8 +12,8 @@ interface InsightsIndexPageProps {
 export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate }) => {
   useEffect(() => {
     updatePageMeta(
-      `Speech & Hearing Health Insights | Dahisar East Mumbai | Rajvi Vibhakar`,
-      `Educational articles on hearing health, childhood communication development, stuttering, and aphasia.`,
+      `Hearing & Speech Health Insights | Dahisar East | Rajvi Vibhakar`,
+      `Educational articles and guidance on hearing health, childhood communication development, stuttering, and aphasia.`,
       `/insights`
     );
   }, []);
