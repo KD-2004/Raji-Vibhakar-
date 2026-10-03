@@ -18,7 +18,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
 }) => {
   useEffect(() => {
     updatePageMeta(
-      `${insight.title} | Rajvi Vibhakar Speech & Hearing`,
+      `${insight.title} | Rajvi Vibhakar’s Speech & Hearing`,
       insight.excerpt,
       `/insights/${insight.slug}`
     );
@@ -124,7 +124,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
                 {relatedService.customerTitle}
               </h3>
               <p className="text-xs text-slate-600 mt-1">
-                Evaluations conducted in person at our Dahisar East clinic.
+                Evaluations conducted in person at Rajvi Vibhakar’s Speech & Hearing Clinic.
               </p>
             </div>
             <Link
@@ -144,7 +144,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
             Need an Individual Clinical Evaluation?
           </h2>
           <p className="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-xl">
-            Schedule an appointment with Rajvi Vibhakar Parikh at our Dahisar East clinic (opposite Pragati Hospital) for a comprehensive hearing test or speech-language evaluation.
+            Schedule an appointment with Rajvi Vibhakar Parikh at Rajvi Vibhakar’s Speech & Hearing Clinic (opposite Pragati Hospital) for a comprehensive hearing test or speech-language evaluation.
           </p>
           <div className="pt-2 flex flex-col sm:flex-row gap-3">
             <button
