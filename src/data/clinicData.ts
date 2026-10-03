@@ -217,7 +217,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "dysarthria-therapy",
     slug: "dysarthria-therapy",
     name: "Dysarthria Therapy",
-    customerTitle: "Dysarthria & Motor Speech Disorders (MUHS State Rank 1 Specialty)",
+    customerTitle: "Dysarthria & Motor Speech Disorders Therapy in Dahisar East",
     category: "speech",
     tagline: "Therapy for slurred, slow, or weak speech resulting from neuromuscular conditions.",
     description: "Rajvi Vibhakar Parikh achieved State Merit Rank 1 under MUHS in Motor Speech Disorders (2020). This specialized therapy addresses speech clarity caused by muscle weakness or neurological conditions.",
@@ -280,7 +280,7 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "audiologist-dahisar-east",
     slug: "audiologist-dahisar-east",
     name: "Audiologist in Dahisar East",
-    customerTitle: "Audiologist & Diagnostic Hearing Clinic in Dahisar East, Mumbai",
+    customerTitle: "Audiologist for Hearing Problems in Dahisar East, Mumbai",
     category: "hearing",
     tagline: "Expert audiological consultation and comprehensive hearing care by Rajvi Vibhakar Parikh (BASLP).",
     description: "Professional audiological services including clinical hearing threshold evaluations, middle ear testing, hearing aid trials, and personalized device programming.",
@@ -300,10 +300,10 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "hearing-test-dahisar-east",
     slug: "hearing-test-dahisar-east",
     name: "Hearing Test in Dahisar East",
-    customerTitle: "Clinical Hearing Test in Dahisar East, Mumbai",
+    customerTitle: "Hearing Test & Hearing Loss Assessment in Dahisar East, Mumbai",
     category: "hearing",
     tagline: "Comprehensive diagnostic hearing evaluation with calibrated testing equipment.",
-    description: "Complete audiological assessment to determine hearing thresholds across frequencies, identify hearing loss type, and recommend appropriate interventions.",
+    description: "Professional hearing testing and hearing-loss assessment to measure hearing thresholds, identify the pattern of hearing loss, and guide appropriate next steps.",
     clinicalScope: [
       "Pure Tone Audiometry (Air and Bone conduction testing)",
       "Speech discrimination and speech reception threshold testing",
@@ -478,6 +478,10 @@ export const HOW_IT_WORKS_STEPS = [
 
 export const FAQS = [
   {
+    question: "Who should I see for a hearing problem in Dahisar East?",
+    answer: "An audiologist can evaluate hearing problems and perform tests such as Pure Tone Audiometry. Medical ear conditions or symptoms may also require assessment by an ENT physician.",
+  },
+
     question: "Where is the clinic located in Dahisar East?",
     answer: "The clinic is located at Shop No. 1, Ramkunwar Thakur Marg, opposite Pragati Hospital, Krishna Colony, Dahisar East, Mumbai 400068.",
   },
