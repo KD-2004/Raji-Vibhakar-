@@ -127,7 +127,7 @@ export const LocationSection: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <Copy className="w-3.5 h-3.5 text-slate-500" />
+                        <Copy className="w-3.5 h-3.5 text-slate-600" />
                         <span>Copy Address</span>
                       </>
                     )}
@@ -145,7 +145,7 @@ export const LocationSection: React.FC = () => {
                       </>
                     ) : (
                       <>
-                        <Share2 className="w-3.5 h-3.5 text-slate-500" />
+                        <Share2 className="w-3.5 h-3.5 text-slate-600" />
                         <span>Share</span>
                       </>
                     )}
@@ -206,7 +206,7 @@ export const LocationSection: React.FC = () => {
                 >
                   <Phone className="w-4 h-4 text-teal-600 shrink-0" />
                   <div>
-                    <div className="text-[11px] text-slate-500 font-medium">Direct Phone Call</div>
+                    <div className="text-[11px] text-slate-600 font-medium">Direct Phone Call</div>
                     <div className="font-semibold text-slate-900 font-mono">{CLINIC_INFO.contact.displayPhone}</div>
                   </div>
                 </a>
@@ -220,7 +220,7 @@ export const LocationSection: React.FC = () => {
                 >
                   <MessageCircle className="w-4 h-4 text-emerald-600 shrink-0" />
                   <div>
-                    <div className="text-[11px] text-slate-500 font-medium">WhatsApp Chat</div>
+                    <div className="text-[11px] text-slate-600 font-medium">WhatsApp Chat</div>
                     <div className="font-semibold text-emerald-800">Chat Instantly</div>
                   </div>
                 </a>
@@ -247,7 +247,7 @@ export const LocationSection: React.FC = () => {
                     <div className="text-xs font-bold text-slate-900 leading-tight">
                       Google Business Profile
                     </div>
-                    <div className="text-[11px] text-slate-500">
+                    <div className="text-[11px] text-slate-600">
                       {CLINIC_INFO.location.googleCategory}
                     </div>
                   </div>
@@ -274,7 +274,7 @@ export const LocationSection: React.FC = () => {
                       Verified Healthcare Entity
                     </span>
                   </div>
-                  <span className="text-[11px] text-slate-400 font-mono">
+                  <span className="text-[11px] text-slate-500 font-mono">
                     Dahisar East, Mumbai
                   </span>
                 </div>
@@ -289,7 +289,7 @@ export const LocationSection: React.FC = () => {
                 </div>
 
                 <div className="pt-2 border-t border-slate-800 flex flex-wrap items-center justify-between gap-3">
-                  <div className="text-[11px] text-slate-400">
+                  <div className="text-[11px] text-slate-500">
                     Location Directions:
                   </div>
                   <a
