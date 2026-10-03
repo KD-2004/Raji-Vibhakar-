@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from '../utils/motion';
 import { Award, Ear, Star, Globe, MapPin, ExternalLink, CheckCircle2, ShieldCheck, Sparkles } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import { trackEvent } from '../utils/analytics';
