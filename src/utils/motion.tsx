@@ -33,6 +33,6 @@ export const motion = {
   article: createMotionComponent('article'),
 };
 
-export const AnimatePresence: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
+export const AnimatePresence: React.FC<any> = ({ children }) => (
   <>{children}</>
 );
