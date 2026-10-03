@@ -64,7 +64,7 @@ export const trackEvent = (eventName: AnalyticsEventName, params: EventParams = 
       w.gtag('event', eventName, sanitizedParams);
     }
 
-    if (process.env.NODE_ENV === 'development') {
+    if (import.meta.env.DEV) {
       console.log(`[Analytics Event: ${eventName}]`, sanitizedParams);
     }
   }
