@@ -377,13 +377,13 @@ const sitemapUrls = routes
   .map((route) => route.path === '/' ? `${CANONICAL_DOMAIN}/` : `${CANONICAL_DOMAIN}${route.path}`);
 
 const sitemapRoutes = sitemapUrls.map((loc) => {
-  return `  <url>\\n    <loc>${loc}</loc>\\n  </url>`;
+  return `  <url>\n    <loc>${loc}</loc>\n  </url>`;
 });
 
-const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\\n${sitemapRoutes.join('\\n')}\\n</urlset>\\n`;
+const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapRoutes.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf-8');
 
-const sitemapTxt = sitemapUrls.join('\\n') + '\\n';
+const sitemapTxt = sitemapUrls.join('\n') + '\n';
 fs.writeFileSync(path.join(DIST_DIR, 'sitemap.txt'), sitemapTxt, 'utf-8');
 
-console.log(`\\nAll ${routes.length} routes successfully prerendered into dist/ with static HTML and synchronized XML/text sitemaps!`);
+console.log(`\nAll ${routes.length} routes successfully prerendered into dist/ with static HTML and synchronized XML/text sitemaps!`);
