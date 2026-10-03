@@ -1,6 +1,6 @@
 /**
  * Verified Clinic Data & Professional Authority Model
- * Rajvi Vibhakar Speech & Hearing Clinic — Dahisar East, Mumbai
+ * Rajvi Vibhakar’s Speech & Hearing Clinic — Mumbai
  *
  * Conforms 100% to Master Specification:
  * - Zero unverified business attributes (no priceRange, no invented coordinates)
@@ -27,9 +27,9 @@ export interface ServiceDetail {
 }
 
 export const CLINIC_INFO = {
-  businessName: "Rajvi Vibhakar Speech & Hearing Clinic",
-  siteName: "Rajvi Vibhakar Speech & Hearing",
-  tagline: "Audiology, Hearing Aid Trials & Speech-Language Therapy in Dahisar East",
+  businessName: "Rajvi Vibhakar’s Speech & Hearing Clinic",
+  siteName: "Rajvi Vibhakar’s Speech & Hearing",
+  tagline: "Audiology, Hearing Aid Trials & Speech-Language Therapy by Rajvi Vibhakar",
   professionalName: "Rajvi Vibhakar Parikh",
   professionalTitle: "Audiologist & Speech-Language Therapist",
   degrees: "BASLP (AYJNISHD, Mumbai)",
@@ -102,8 +102,8 @@ export const CLINIC_INFO = {
       description: "Consultations in your mother tongue: English, Gujarati, Hindi, or Marathi for comfort across all generations.",
     },
     {
-      title: "Dahisar East Clinic Location",
-      description: "Located in Rajaram Mahtre Welfare Association on R.T. Road in Dahisar East, opposite Pragati Hospital.",
+      title: "Rajvi Vibhakar’s Clinic Location",
+      description: "Located in Rajaram Mahtre Welfare Association on R.T. Road, opposite Pragati Hospital.",
     },
   ],
 };
@@ -113,7 +113,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "speech-therapy-dahisar-east",
     slug: "speech-therapy-dahisar-east",
     name: "Speech and Language Therapy",
-    customerTitle: "Speech and Language Therapy in Dahisar East, Mumbai",
+    customerTitle: "Speech and Language Therapy by Rajvi Vibhakar",
     category: "speech",
     tagline: "Structured clinical evaluation and therapy for speech, fluency, and communication disorders.",
     description: "Speech and language therapy addresses speech clarity, articulation, stuttering fluency, and language comprehension for children, adults, and seniors.",
@@ -145,7 +145,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "misarticulation-therapy",
     slug: "misarticulation-therapy",
     name: "Misarticulation Therapy",
-    customerTitle: "Misarticulation & Speech Sound Therapy in Dahisar East",
+    customerTitle: "Misarticulation & Speech Sound Therapy by Rajvi Vibhakar",
     category: "speech",
     tagline: "Correcting sound substitutions, omissions, and distortions for clear communication.",
     description: "Targeted clinical therapy to correct speech sound errors such as sound substitutions (e.g., saying 'tat' for 'cat'), distortions, or lisping.",
@@ -171,7 +171,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "stuttering-therapy",
     slug: "stuttering-therapy",
     name: "Stuttering Therapy",
-    customerTitle: "Stuttering & Fluency Therapy in Dahisar East, Mumbai",
+    customerTitle: "Stuttering & Fluency Therapy by Rajvi Vibhakar",
     category: "speech",
     tagline: "Evidence-based therapy targeting repetitions, prolongations, and speech blocks.",
     description: "Clinical fluency therapy designed for children, adolescents, and adults experiencing stuttering or stammering.",
@@ -197,7 +197,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "aphasia-therapy",
     slug: "aphasia-therapy",
     name: "Aphasia Therapy",
-    customerTitle: "Post-Stroke Aphasia Rehabilitation in Dahisar East",
+    customerTitle: "Post-Stroke Aphasia Rehabilitation by Rajvi Vibhakar",
     category: "speech",
     tagline: "Language rehabilitation following stroke or neurological conditions.",
     description: "Rehabilitative therapy targeting word retrieval, language comprehension, reading, and functional expression following a stroke or brain injury.",
@@ -217,7 +217,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "dysarthria-therapy",
     slug: "dysarthria-therapy",
     name: "Dysarthria Therapy",
-    customerTitle: "Dysarthria & Motor Speech Disorders Therapy in Dahisar East",
+    customerTitle: "Dysarthria & Motor Speech Disorders Therapy by Rajvi Vibhakar",
     category: "speech",
     tagline: "Therapy for slurred, slow, or weak speech resulting from neuromuscular conditions.",
     description: "Rajvi Vibhakar Parikh achieved State Merit Rank 1 under MUHS in Motor Speech Disorders (2020). This specialized therapy addresses speech clarity caused by muscle weakness or neurological conditions.",
@@ -237,7 +237,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "voice-therapy",
     slug: "voice-therapy",
     name: "Voice Therapy",
-    customerTitle: "Voice Therapy for Hoarseness & Vocal Strain in Dahisar East",
+    customerTitle: "Voice Therapy for Hoarseness & Vocal Strain by Rajvi Vibhakar",
     category: "speech",
     tagline: "Clinical voice rehabilitation for hoarseness, vocal nodules, and vocal fatigue.",
     description: "Therapy for individuals experiencing chronic hoarseness, vocal strain, vocal fold nodules, or muscle tension dysphonia.",
@@ -257,7 +257,7 @@ export const SPEECH_SERVICES: ServiceDetail[] = [
     id: "swallowing-therapy",
     slug: "swallowing-therapy",
     name: "Swallowing Therapy",
-    customerTitle: "Swallowing Therapy & Dysphagia Care in Dahisar East",
+    customerTitle: "Swallowing Therapy & Dysphagia Care by Rajvi Vibhakar",
     category: "speech",
     tagline: "Evaluation and therapy for swallowing difficulties and safe oral intake.",
     description: "Clinical evaluation and rehabilitation for swallowing difficulties (dysphagia), promoting safe eating and drinking to reduce coughing and choking risks.",
@@ -279,8 +279,8 @@ export const HEARING_SERVICES: ServiceDetail[] = [
   {
     id: "audiologist-dahisar-east",
     slug: "audiologist-dahisar-east",
-    name: "Audiologist in Dahisar East",
-    customerTitle: "Audiologist for Hearing Problems in Dahisar East, Mumbai",
+    name: "Audiologist — Rajvi Vibhakar",
+    customerTitle: "Audiologist for Hearing Problems — Rajvi Vibhakar",
     category: "hearing",
     tagline: "Expert audiological consultation and comprehensive hearing care by Rajvi Vibhakar Parikh (BASLP).",
     description: "Professional audiological services including clinical hearing threshold evaluations, middle ear testing, hearing aid trials, and personalized device programming.",
@@ -299,8 +299,8 @@ export const HEARING_SERVICES: ServiceDetail[] = [
   {
     id: "hearing-test-dahisar-east",
     slug: "hearing-test-dahisar-east",
-    name: "Hearing Test in Dahisar East",
-    customerTitle: "Hearing Test & Hearing Loss Assessment in Dahisar East, Mumbai",
+    name: "Hearing Test — Rajvi Vibhakar",
+    customerTitle: "Hearing Test & Hearing Loss Assessment — Rajvi Vibhakar",
     category: "hearing",
     tagline: "Comprehensive diagnostic hearing evaluation with calibrated testing equipment.",
     description: "Professional hearing testing and hearing-loss assessment to measure hearing thresholds, identify the pattern of hearing loss, and guide appropriate next steps.",
@@ -321,7 +321,7 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "pure-tone-audiometry",
     slug: "pure-tone-audiometry",
     name: "Pure Tone Audiometry",
-    customerTitle: "Pure Tone Audiometry (PTA) Hearing Assessment in Dahisar East",
+    customerTitle: "Pure Tone Audiometry (PTA) Hearing Assessment by Rajvi Vibhakar",
     category: "hearing",
     tagline: "Gold-standard hearing test measuring hearing thresholds across low to high pitches.",
     description: "A standardized diagnostic test assessing air and bone conduction hearing sensitivity from 250 Hz to 8000 Hz, mapping your exact hearing profile.",
@@ -341,7 +341,7 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "impedance-audiometry",
     slug: "impedance-audiometry",
     name: "Impedance Audiometry",
-    customerTitle: "Impedance Audiometry & Middle Ear Test in Dahisar East",
+    customerTitle: "Impedance Audiometry & Middle Ear Test by Rajvi Vibhakar",
     category: "hearing",
     tagline: "Objective middle ear assessment for eardrum movement and middle ear pressure.",
     description: "A fast, objective test evaluating eardrum mobility and middle ear function, commonly used to detect fluid behind the eardrum or eustachian tube dysfunction.",
@@ -361,7 +361,7 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "hearing-aid-trial",
     slug: "hearing-aid-trial",
     name: "Hearing Aid Trial",
-    customerTitle: "Live Hearing Aid Trial in Dahisar East, Mumbai",
+    customerTitle: "Live Hearing Aid Trial by Rajvi Vibhakar",
     category: "hearing",
     tagline: "Experience real sound clarity in conversation before deciding on any hearing device.",
     description: "An in-clinic trial where modern digital hearing aids are programmed to your specific audiogram, allowing you to test speech clarity and comfort firsthand.",
@@ -381,7 +381,7 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "digital-hearing-aids",
     slug: "digital-hearing-aids",
     name: "Digital Hearing Aids",
-    customerTitle: "Digital Hearing Aids (ITC, RIC, CIC, BTE & CROS) in Dahisar East",
+    customerTitle: "Digital Hearing Aids (ITC, RIC, CIC, BTE & CROS) by Rajvi Vibhakar",
     category: "hearing",
     tagline: "Modern digital technology with speech enhancement, background noise management, and custom styles.",
     description: "Consultation, selection, fitting, and programming of digital hearing aids designed to enhance speech understanding in quiet and noisy environments.",
@@ -401,7 +401,7 @@ export const HEARING_SERVICES: ServiceDetail[] = [
     id: "analog-hearing-aids",
     slug: "analog-hearing-aids",
     name: "Analog Hearing Aids",
-    customerTitle: "Analog Hearing Aid Consultation & Servicing in Dahisar East",
+    customerTitle: "Analog Hearing Aid Consultation & Servicing by Rajvi Vibhakar",
     category: "hearing",
     tagline: "Servicing, ear mold replacement, and clinical counseling for analog hearing aid users.",
     description: "Inspection, cleaning, ear mold fitting, and honest clinical counseling for patients currently using analog hearing aids.",
@@ -467,7 +467,7 @@ export const HOW_IT_WORKS_STEPS = [
   {
     step: "02",
     title: "Clinical Evaluation",
-    description: "Visit our Dahisar East clinic for an in-depth hearing test or speech-language evaluation in a comfortable setting.",
+    description: "Visit Rajvi Vibhakar’s Speech & Hearing Clinic for an in-depth hearing test or speech-language evaluation in a comfortable setting.",
   },
   {
     step: "03",
@@ -478,11 +478,11 @@ export const HOW_IT_WORKS_STEPS = [
 
 export const FAQS = [
   {
-    question: "Who should I see for a hearing problem in Dahisar East?",
+    question: "Who should I see for a hearing problem?",
     answer: "An audiologist can evaluate hearing problems and perform tests such as Pure Tone Audiometry. Medical ear conditions or symptoms may also require assessment by an ENT physician.",
   },
   {
-    question: "Where is the clinic located in Dahisar East?",
+    question: "Where is Rajvi Vibhakar’s clinic located?",
     answer: "The clinic is located at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068.",
   },
   {
