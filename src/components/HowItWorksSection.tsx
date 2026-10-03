@@ -28,7 +28,7 @@ export const HowItWorksSection: React.FC<HowItWorksProps> = ({ onOpenBooking }) 
             Simple 3-Step Patient Journey
           </span>
           <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight [text-wrap:balance]">
-            How to Get Started at Our Dahisar East Clinic
+            How to Get Started at Rajvi Vibhakar’s Clinic
           </h2>
           <p className="text-slate-600 text-sm mt-2.5">
             We value your time with zero long waiting room delays and compassionate, transparent clinical care.
