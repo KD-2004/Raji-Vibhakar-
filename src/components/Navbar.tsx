@@ -79,7 +79,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
           href="/"
           onNavigate={handleLinkClick}
           className="flex items-center gap-2 sm:gap-3 group shrink min-w-0 text-left"
-          aria-label="Rajvi Vibhakar Speech & Hearing Clinic"
+          aria-label="Rajvi Vibhakar’s Speech &amp; Hearing Clinic"
         >
           <ClinicLogo size="md" priority />
           <div className="flex flex-col min-w-0">
@@ -88,7 +88,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <span className="hidden sm:inline">{CLINIC_INFO.businessName}</span>
             </span>
             <span className="text-[10px] sm:text-[11px] font-medium text-teal-700 tracking-wide truncate">
-              <span className="sm:hidden">Audiology &amp; Speech · Dahisar East</span>
+              <span className="sm:hidden">Rajvi Vibhakar’s Speech &amp; Hearing</span>
               <span className="hidden sm:inline">Rajvi Vibhakar Parikh (BASLP, AYJNISHD)</span>
             </span>
           </div>
@@ -224,7 +224,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
                 onNavigate={handleLinkClick}
                 className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
-                <span>Clinic Location &amp; Directions (Dahisar East)</span>
+                <span>Rajvi Vibhakar’s Clinic Location &amp; Directions</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
               </Link>
               <Link
