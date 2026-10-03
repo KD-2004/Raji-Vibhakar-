@@ -25,19 +25,16 @@ The build creates statically prerendered HTML for the public routes, plus `404.h
 
 ## Deployment
 
-### Netlify
+### Vercel
 
-The repository includes `netlify.toml`.
+The repository includes `vercel.json`.
 
+- Framework: Vite
 - Build command: `npm run build`
-- Publish directory: `dist`
-- Node: 22
+- Output directory: `dist`
+- Node: 22.x (from `package.json` engines)
 
-Because the important routes are statically generated, do not add a blanket SPA rewrite that sends every unknown URL to the homepage. The generated `404.html` should remain the fallback for invalid URLs.
-
-### Other static hosting
-
-Publish the `dist/` directory after running the production build. Configure the host so the generated route directories and `404.html` are served directly.
+The important pages are statically generated, so no blanket SPA rewrite is required. The generated `404.html` remains the fallback for invalid URLs.
 
 ## SEO launch checklist
 
