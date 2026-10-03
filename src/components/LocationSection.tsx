@@ -53,7 +53,7 @@ export const LocationSection: React.FC = () => {
           <div className="flex items-center gap-2 text-xs font-semibold text-teal-700 tracking-wider uppercase mb-2">
             <span>Clinic Location &amp; Directions</span>
             <span aria-hidden="true">·</span>
-            <span>Rajvi Vibhakar’s Speech &amp; Hearing</span>
+            <span>{CLINIC_INFO.siteName}</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
             Visit Rajvi Vibhakar’s Speech &amp; Hearing Clinic
