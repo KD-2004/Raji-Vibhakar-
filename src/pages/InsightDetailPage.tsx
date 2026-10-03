@@ -31,7 +31,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
     <article className="bg-slate-50 py-10 sm:py-16">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-8">
         {/* Breadcrumb Navigation with crawlable Links */}
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500 flex items-center gap-1.5 flex-wrap">
+        <nav aria-label="Breadcrumb" className="text-xs text-slate-600 flex items-center gap-1.5 flex-wrap">
           <Link href="/" onNavigate={onNavigate} className="hover:text-teal-700 underline">
             Home
           </Link>
@@ -49,10 +49,10 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
             <span className="font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
               {insight.category}
             </span>
-            <span className="text-slate-500" aria-hidden="true">·</span>
-            <span className="text-slate-500">{insight.readTime}</span>
-            <span className="text-slate-500" aria-hidden="true">·</span>
-            <span className="text-slate-500">Educational resource</span>
+            <span className="text-slate-600" aria-hidden="true">·</span>
+            <span className="text-slate-600">{insight.readTime}</span>
+            <span className="text-slate-600" aria-hidden="true">·</span>
+            <span className="text-slate-600">Educational resource</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
@@ -65,7 +65,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
               <BookOpen className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
               <div>
                 <div className="font-semibold text-slate-900">Educational health article</div>
-                <div className="text-[11px] text-slate-500 mt-1">
+                <div className="text-[11px] text-slate-600 mt-1">
                   General information only. This article does not replace an individual clinical evaluation.
                 </div>
               </div>
