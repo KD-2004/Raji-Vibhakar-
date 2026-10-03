@@ -146,7 +146,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
 
                   {/* Who It Helps */}
                   <div className="pt-2 border-t border-slate-100">
-                    <div className="text-[11px] font-bold uppercase tracking-wider text-slate-500 mb-1.5">
+                    <div className="text-[11px] font-bold uppercase tracking-wider text-slate-600 mb-1.5">
                       Signs for Clinical Evaluation:
                     </div>
                     <ul className="space-y-1 text-xs text-slate-600">
@@ -224,7 +224,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                     <h4 className="font-bold text-slate-900 text-sm">{style.name}</h4>
                     <p className="text-xs text-slate-600 mt-1.5 leading-relaxed">{style.description}</p>
                   </div>
-                  <div className="mt-3 pt-2.5 border-t border-slate-200 text-[11px] text-slate-500 font-medium">
+                  <div className="mt-3 pt-2.5 border-t border-slate-200 text-[11px] text-slate-600 font-medium">
                     {style.bestFor}
                   </div>
                 </motion.div>
