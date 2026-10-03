@@ -57,7 +57,7 @@ jobs:
           }
 
           if (urls.length !== 24) {
-            throw new Error(`Expected 24 canonical sitemap URLs, found \${urls.length}`);
+            throw new Error(`Expected 24 canonical sitemap URLs, found ${urls.length}`);
           }
 
           if (new Set(urls).size !== urls.length) {
@@ -66,7 +66,7 @@ jobs:
 
           for (const url of urls) {
             if (!url.startsWith(CANONICAL + '/')) {
-              throw new Error(`Sitemap contains a non-canonical URL: \${url}`);
+              throw new Error(`Sitemap contains a non-canonical URL: ${url}`);
             }
             if (url.endsWith('/404')) {
               throw new Error('Sitemap must not include the 404 route.');
@@ -113,7 +113,7 @@ jobs:
           for (const file of htmlFiles) {
             const html = fs.readFileSync(file, 'utf8');
             for (const token of banned) {
-              if (html.includes(token)) violations.push(`\${file}: \${token}`);
+              if (html.includes(token)) violations.push(`${file}: ${token}`);
             }
           }
 
@@ -121,5 +121,5 @@ jobs:
             throw new Error('Production SEO validation failed:\\n' + violations.join('\\n'));
           }
 
-          console.log(`Static SEO validation passed: \${urls.length} sitemap URLs, \${htmlFiles.length} HTML files.`);
+          console.log(`Static SEO validation passed: ${urls.length} sitemap URLs, ${htmlFiles.length} HTML files.`);
           NODE
