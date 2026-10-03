@@ -8,7 +8,7 @@ Production website for Rajvi Vibhakar Parikh, Audiologist & Speech-Language Ther
 - Designation: Audiologist & Speech-Language Therapist
 - Phone: +91 8898330707
 - Email: rajvivibhakar@gmail.com
-- Address: Shop No. 1, Ramkunwar Thakur Marg, Opp. Pragati Hospital, Krishna Colony, Dahisar East, Mumbai, Maharashtra 400068, India
+- Address: Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Opp. Pragati Hospital, Mumbai 400068
 - Website: https://rajvi-vibhakar.netlify.app/
 
 ## Build
