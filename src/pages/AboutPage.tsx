@@ -15,7 +15,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBooking 
 
   useEffect(() => {
     updatePageMeta(
-      `About Rajvi Vibhakar Parikh | Audiologist & Speech-Language Therapist Dahisar East`,
+      `About Rajvi Vibhakar Parikh | Audiologist & Speech-Language Therapist`,
       `Learn about Rajvi Vibhakar Parikh (BASLP, AYJNISHD Mumbai), State Merit Rank 1 under MUHS in Motor Speech Disorders (2020), clinical experience, and multilingual care.`,
       `/about`
     );
