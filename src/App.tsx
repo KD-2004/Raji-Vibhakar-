@@ -46,8 +46,8 @@ export default function App({ initialPath }: AppProps = {}) {
   useEffect(() => {
     if (currentPath === '/' || currentPath === '') {
       updatePageMeta(
-        `Audiologist & Speech-Language Therapist in Dahisar East, Mumbai | Rajvi Vibhakar`,
-        `Audiologist and speech-language therapist in Dahisar East, Mumbai for hearing problems, hearing tests, hearing loss assessments, hearing aid trials and speech-language therapy for children and adults. Call 8898330707.`,
+        `Audiologist & Speech-Language Therapist | Rajvi Vibhakar`,
+        `Rajvi Vibhakar provides audiology and speech-language therapy for hearing problems, hearing tests, hearing loss assessments, hearing aid trials and speech-language therapy for children and adults. Call 8898330707.`,
         `/`
       );
     }
@@ -163,7 +163,7 @@ export default function App({ initialPath }: AppProps = {}) {
           {/* Interactive Self-Screening Assessment */}
           <AssessmentInteractive onBookWithContext={handleBookWithContext} />
 
-          {/* Clinic Location, Dahisar East Directions & Google Profile */}
+          {/* Rajvi Vibhakar’s Clinic Location & Google Profile */}
           <LocationSection />
 
           {/* Frequently Asked Patient Questions */}
