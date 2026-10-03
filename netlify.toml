@@ -28,3 +28,9 @@
   [headers.values]
     Content-Type = "text/plain; charset=UTF-8"
 
+[[headers]]
+  for = "/sitemap.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=UTF-8"
+    Cache-Control = "public, max-age=300, must-revalidate"
+
