@@ -109,7 +109,7 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
                 className="space-y-6 pt-2"
               >
                 {/* Progress Indicator */}
-                <div className="flex items-center justify-between text-xs text-slate-500 pb-2 border-b border-slate-200/80">
+                <div className="flex items-center justify-between text-xs text-slate-600 pb-2 border-b border-slate-200/80">
                   <span className="font-semibold text-teal-700 flex items-center gap-1.5">
                     <span className="w-2 h-2 rounded-full bg-teal-600" />
                     Question {step} of 3
@@ -148,7 +148,7 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
                           }`}
                         >
                           <div className="font-bold text-xs sm:text-sm text-slate-900">{opt.label}</div>
-                          <div className="text-[11px] text-slate-500 mt-1 leading-relaxed">{opt.sub}</div>
+                          <div className="text-[11px] text-slate-600 mt-1 leading-relaxed">{opt.sub}</div>
                         </motion.button>
                       ))}
                     </div>
@@ -183,14 +183,14 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
                           }`}
                         >
                           <div className="font-bold text-xs sm:text-sm text-slate-900">{opt.label}</div>
-                          <div className="text-[11px] text-slate-500 mt-1">{opt.sub}</div>
+                          <div className="text-[11px] text-slate-600 mt-1">{opt.sub}</div>
                         </motion.button>
                       ))}
                     </div>
                     <div className="pt-2">
                       <button
                         onClick={() => setStep(1)}
-                        className="text-xs text-slate-500 hover:text-slate-800 underline cursor-pointer"
+                        className="text-xs text-slate-600 hover:text-slate-800 underline cursor-pointer"
                       >
                         ← Back to Previous Question
                       </button>
@@ -228,7 +228,7 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
                     <div className="pt-2">
                       <button
                         onClick={() => setStep(2)}
-                        className="text-xs text-slate-500 hover:text-slate-800 underline cursor-pointer"
+                        className="text-xs text-slate-600 hover:text-slate-800 underline cursor-pointer"
                       >
                         ← Back to Previous Question
                       </button>
@@ -252,7 +252,7 @@ export const AssessmentInteractive: React.FC<AssessmentProps> = ({ onBookWithCon
                   </div>
                   <button
                     onClick={handleReset}
-                    className="inline-flex items-center gap-1 text-xs text-slate-500 hover:text-slate-800 transition-colors cursor-pointer"
+                    className="inline-flex items-center gap-1 text-xs text-slate-600 hover:text-slate-800 transition-colors cursor-pointer"
                   >
                     <RotateCcw className="w-3 h-3" />
                     <span>Restart Check</span>
