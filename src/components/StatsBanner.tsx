@@ -91,7 +91,7 @@ export const StatsBanner: React.FC = () => {
                   <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 shrink-0">
                     {p.icon}
                   </div>
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider">
+                  <span className="text-[10px] font-bold text-slate-600 uppercase tracking-wider">
                     {p.tag}
                   </span>
                 </div>
