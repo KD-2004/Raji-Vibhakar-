@@ -17,7 +17,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
   const currentServices = activeTab === 'speech' ? SPEECH_SERVICES : HEARING_SERVICES;
 
   return (
-    <section id="services" className="py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
+    <section id="services" className="content-auto py-16 md:py-24 bg-white border-b border-slate-200 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <motion.div
