@@ -181,7 +181,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onNavigate }) => 
         {/* Bottom Sub-bar with crawlable Links */}
         <div className="pt-6 border-t border-slate-900 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <div>
-            © {new Date().getFullYear()} {CLINIC_INFO.businessName}. All rights reserved.
+            © {new Date().getFullYear()} {CLINIC_INFO.displayBusinessName}. All rights reserved.
           </div>
           <div className="flex items-center gap-4 text-xs">
             <Link href="/about" onNavigate={handleLink} className="hover:text-slate-300">
