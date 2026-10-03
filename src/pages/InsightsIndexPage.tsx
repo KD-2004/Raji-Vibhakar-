@@ -22,7 +22,7 @@ export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate
     <div className="bg-slate-50 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
         {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500 flex items-center gap-1.5">
+        <nav aria-label="Breadcrumb" className="text-xs text-slate-600 flex items-center gap-1.5">
           <Link href="/" onNavigate={onNavigate} className="hover:text-teal-700 underline">
             Home
           </Link>
@@ -50,7 +50,7 @@ export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate
               key={insight.slug}
               className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/90 shadow-sm hover:border-teal-400 transition-all space-y-4"
             >
-              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+              <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
                 <span className="font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
                   {insight.category}
                 </span>
