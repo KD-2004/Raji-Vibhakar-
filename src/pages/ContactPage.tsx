@@ -17,7 +17,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
   useEffect(() => {
     updatePageMeta(
       `Contact Rajvi Vibhakar’s Speech & Hearing Clinic | Mumbai`,
-      `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068. Call 8898330707.`,
+      `Visit Rajvi Vibhakar’s Speech & Hearing Clinic at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068. Call 8898330707.`,
       `/contact`
     );
   }, []);
