@@ -24,13 +24,17 @@ const MOTION_PROPS = new Set([
   'layoutId',
 ]);
 
-function createMotionComponent<T extends keyof React.JSX.IntrinsicElements>(tag: T) {
-  return React.forwardRef<HTMLElement, React.JSX.IntrinsicElements[T] & MotionOnlyProps>(
+function createMotionComponent(tag: 'div' | 'button' | 'a' | 'article') {
+  return React.forwardRef<HTMLElement, React.HTMLAttributes<HTMLElement> & MotionOnlyProps>(
     (props, ref) => {
       const domProps: Record<string, unknown> = {};
+
       for (const [key, value] of Object.entries(props)) {
-        if (!MOTION_PROPS.has(key)) domProps[key] = value;
+        if (!MOTION_PROPS.has(key)) {
+          domProps[key] = value;
+        }
       }
+
       return React.createElement(tag, { ...domProps, ref });
     },
   );
