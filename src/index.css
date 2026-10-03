@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    scroll-behavior: smooth;
+    color: #0f172a;
+    background-color: #f8fafc;
+  }
+
+  ::selection {
+    background-color: #ccfbf1;
+    color: #0f766e;
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect width="64" height="64" rx="14" fill="#0f766e"/>
+  <!-- Stylized ear and soundwave emblem -->
+  <path d="M42 20C45 27 46 36 42 42C39 47 35 50 31 53C26 57 20 58 15 56C13 55 11 52 11 49C11 45 14 42 18 42C22 42 27 46 31 45C35 44 38 39 39 34C41 27 38 21 34 17C30 13 24 14 21 18" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round"/>
+  <!-- Soundwaves -->
+  <path d="M47 24C50 28 50 36 47 40" stroke="#5eead4" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M53 20C57 26 57 38 53 44" stroke="#99f6e4" stroke-width="3" stroke-linecap="round"/>
+</svg>

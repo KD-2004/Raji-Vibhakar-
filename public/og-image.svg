@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#042f2e"/>
+  <!-- Ambient background glow -->
+  <circle cx="200" cy="150" r="300" fill="#0f766e" fill-opacity="0.3" filter="blur(60px)"/>
+  <circle cx="1050" cy="450" r="280" fill="#0891b2" fill-opacity="0.25" filter="blur(60px)"/>
+
+  <!-- Top Location & Badge -->
+  <rect x="80" y="80" width="310" height="44" rx="22" fill="#134e4a" stroke="#2dd4bf" stroke-width="1.5"/>
+  <text x="110" y="108" fill="#5eead4" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="1">DAHISAR EAST, MUMBAI</text>
+
+  <!-- Title -->
+  <text x="80" y="210" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800">Rajvi Vibhakar Speech &amp; Hearing</text>
+  <text x="80" y="275" fill="#2dd4bf" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="600">Audiologist &amp; Speech-Language Therapist</text>
+
+  <!-- Credentials -->
+  <text x="80" y="340" fill="#ccfbf1" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500">Rajvi Vibhakar Parikh · BASLP (AYJNISHD, Mumbai)</text>
+  <text x="80" y="375" fill="#99f6e4" font-family="system-ui, -apple-system, sans-serif" font-size="20">State Merit Rank 1 in Motor Speech Disorders (2020)</text>
+
+  <!-- Services list -->
+  <line x1="80" y1="415" x2="1120" y2="415" stroke="#134e4a" stroke-width="2"/>
+  <text x="80" y="465" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="600">Pure Tone Audiometry · Live Hearing Aid Trials · Speech Therapy · Stuttering · Aphasia</text>
+  <text x="80" y="505" fill="#94a3b8" font-family="system-ui, -apple-system, sans-serif" font-size="20">Shop No. 1, Ramkunwar Thakur Marg, Opp. Pragati Hospital, Dahisar East, Mumbai</text>
+
+  <!-- Contact CTA -->
+  <rect x="80" y="540" width="280" height="50" rx="12" fill="#0d9488"/>
+  <text x="115" y="572" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700">Call: +91 8898330707</text>
+</svg>
