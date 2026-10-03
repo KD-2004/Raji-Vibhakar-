@@ -28,7 +28,7 @@ export const StatsBanner: React.FC = () => {
       icon: <MapPin className="w-5 h-5 text-emerald-600" />,
       tag: "Dahisar East, Mumbai",
       title: "Opp. Pragati Hospital",
-      desc: "Shop No. 1, Ramkunwar Thakur Marg, Krishna Colony. Easy access from Dahisar station & highway.",
+      desc: "Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road. Opp. Pragati Hospital, Dahisar East.",
       check: "Direct Physical Clinic",
       accent: "emerald",
       isMap: true,
