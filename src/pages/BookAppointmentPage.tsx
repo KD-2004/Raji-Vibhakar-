@@ -23,8 +23,8 @@ export const BookAppointmentPage: React.FC<BookAppointmentPageProps> = ({ onNavi
 
   useEffect(() => {
     updatePageMeta(
-      `Book Consultation | Hearing Test & Speech Therapy in Dahisar East`,
-      `Reserve your hearing test, digital hearing aid trial, or speech-language therapy consultation at our Dahisar East clinic. Call or WhatsApp 8898330707.`,
+      `Book Consultation | Hearing Test & Speech Therapy | Rajvi Vibhakar`,
+      `Reserve your hearing test, digital hearing aid trial, or speech-language therapy consultation at Rajvi Vibhakar’s Speech & Hearing Clinic. Call or WhatsApp 8898330707.`,
       `/book-appointment`
     );
     trackEvent('appointment_open', { source: 'book_page' });
@@ -50,8 +50,8 @@ export const BookAppointmentPage: React.FC<BookAppointmentPageProps> = ({ onNavi
 
     trackEvent('appointment_submit', { method: 'whatsapp', service: selectedService });
 
-    const message = `Hello Rajvi Vibhakar Speech & Hearing Clinic,
-I would like to book a consultation at your Dahisar East clinic.
+    const message = `Hello Rajvi Vibhakar’s Speech & Hearing Clinic,
+I would like to book a consultation at Rajvi Vibhakar’s Speech & Hearing Clinic.
 
 Patient Name: ${patientName}
 Age Group: ${ageGroup}
@@ -85,7 +85,7 @@ Thank you!`;
 
         <header className="space-y-2">
           <span className="text-xs font-bold text-teal-700 uppercase tracking-wider block">
-            Dahisar East, Mumbai
+            Rajvi Vibhakar’s Speech &amp; Hearing
           </span>
           <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             Schedule a Clinic Consultation
@@ -214,7 +214,7 @@ Thank you!`;
                 className="w-full px-3 py-2.5 text-base sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-600 focus:bg-white text-slate-900 transition-all min-h-[44px]"
               >
                 <optgroup label="Hearing & Audiology">
-                  <option value="Hearing Test in Dahisar East">Hearing Test in Dahisar East</option>
+                  <option value="Hearing Test — Rajvi Vibhakar">Hearing Test — Rajvi Vibhakar</option>
                   <option value="Pure Tone Audiometry (Hearing Test)">Pure Tone Audiometry (Hearing Test)</option>
                   <option value="Impedance Audiometry & Middle Ear Test">Impedance Audiometry & Middle Ear Test</option>
                   <option value="Live Hearing Aid Trial">Live Hearing Aid Trial</option>
