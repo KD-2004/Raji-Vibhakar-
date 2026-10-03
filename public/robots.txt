@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rajvivibhakar.com/sitemap.xml
+Sitemap: https://rajvi-vibhakar.netlify.app/sitemap.xml
