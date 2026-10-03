@@ -47,22 +47,14 @@ const clinicSchema = {
   email: CLINIC_INFO.contact.email,
   url: `${CANONICAL_DOMAIN}/`,
   hasMap: CLINIC_INFO.location.googleMapsSearchUrl,
-  sameAs: [CLINIC_INFO.location.googleMapsSearchUrl],
-  currenciesAccepted: 'INR',
-  paymentAccepted: 'Cash, Credit Card, UPI, Google Pay, PhonePe',
   medicalSpecialty: ['Audiology', 'SpeechPathology'],
   address: {
     '@type': 'PostalAddress',
-    streetAddress: CLINIC_INFO.location.shopAndStreet,
-    addressLocality: CLINIC_INFO.location.area,
+    streetAddress: 'Shop No. 1, Ramkunwar Thakur Marg, Krishna Colony',
+    addressLocality: 'Mumbai',
     addressRegion: 'Maharashtra',
     postalCode: '400068',
     addressCountry: 'IN',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 19.2562,
-    longitude: 72.8622,
   },
   openingHoursSpecification: [
     {
@@ -73,11 +65,11 @@ const clinicSchema = {
     },
   ],
   areaServed: [
-    { '@type': 'City', name: 'Dahisar East' },
-    { '@type': 'City', name: 'Dahisar West' },
-    { '@type': 'City', name: 'Borivali' },
-    { '@type': 'City', name: 'Mira Road' },
-    { '@type': 'City', name: 'Kandivali' },
+    { '@type': 'Place', name: 'Dahisar East' },
+    { '@type': 'Place', name: 'Dahisar West' },
+    { '@type': 'Place', name: 'Borivali' },
+    { '@type': 'Place', name: 'Mira Road' },
+    { '@type': 'Place', name: 'Kandivali' },
     { '@type': 'City', name: 'Mumbai' },
   ],
 };
@@ -211,7 +203,7 @@ routes.push({
   path: '/insights',
   outputPath: path.join(DIST_DIR, 'insights', 'index.html'),
   title: `Clinical Insights & Articles on Hearing & Speech Care | Dahisar East`,
-  description: `Medically reviewed articles and guidance on adult hearing health, childhood speech milestones, stuttering fluency, and stroke recovery by Rajvi Vibhakar Parikh.`,
+  description: `Educational articles and guidance on hearing health, childhood communication development, stuttering, and aphasia.`,
   schema: {
     '@context': 'https://schema.org',
     '@graph': [
@@ -242,19 +234,8 @@ for (const insight of HEALTH_INSIGHTS) {
           description: insight.excerpt,
           url: `${CANONICAL_DOMAIN}/insights/${insight.slug}`,
           datePublished: insight.publishedDate,
-          dateModified: '2026-10-02',
-          author: {
-            '@type': 'Person',
-            name: CLINIC_INFO.professionalName,
-            jobTitle: CLINIC_INFO.professionalTitle,
-          },
-          reviewedBy: {
-            '@type': 'Person',
-            name: CLINIC_INFO.professionalName,
-            jobTitle: CLINIC_INFO.professionalTitle,
-          },
           publisher: {
-            '@type': 'MedicalOrganization',
+            '@type': 'MedicalBusiness',
             name: CLINIC_INFO.businessName,
             url: `${CANONICAL_DOMAIN}/`,
           },
@@ -276,11 +257,10 @@ for (const insight of HEALTH_INSIGHTS) {
 for (const service of ALL_SERVICES) {
   const serviceGraph: object[] = [
     {
-      '@type': 'MedicalProcedure',
+      '@type': 'Service',
       name: service.name,
       description: service.description,
-      procedureType: service.category === 'hearing' ? 'AudiologyProcedure' : 'SpeechTherapyProcedure',
-      bodyLocation: service.category === 'hearing' ? 'Ear' : 'Speech Organs and Brain',
+      serviceType: service.category === 'hearing' ? 'Audiology' : 'Speech-Language Therapy',
       provider: {
         '@id': `${CANONICAL_DOMAIN}/#clinic`,
       },
@@ -294,19 +274,6 @@ for (const service of ALL_SERVICES) {
     },
   ];
 
-  if (service.faqs && service.faqs.length > 0) {
-    serviceGraph.push({
-      '@type': 'FAQPage',
-      mainEntity: service.faqs.map((faq) => ({
-        '@type': 'Question',
-        name: faq.q,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.a,
-        },
-      })),
-    });
-  }
 
   routes.push({
     path: `/${service.slug}`,
@@ -406,8 +373,4 @@ for (const route of routes) {
   console.log(`✓ Prerendered: ${route.path} -> ${path.relative(process.cwd(), route.outputPath)}`);
 }
 
-// Generate Netlify/Cloudflare _redirects for SPA fallback if needed
-const redirectsContent = `/* /index.html 200\n`;
-fs.writeFileSync(path.join(DIST_DIR, '_redirects'), redirectsContent, 'utf-8');
-
-console.log(`\nAll ${routes.length} routes successfully prerendered into dist/ with static HTML!`);
+console.log(`\nAll ${routes.length} routes successfully prerendered into dist/ with static HTML and a real 404 page!`);\n
