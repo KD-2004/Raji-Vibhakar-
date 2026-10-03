@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { BookOpen, ArrowRight, UserCheck, CheckCircle2 } from 'lucide-react';
+import { BookOpen, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { HEALTH_INSIGHTS, CLINIC_INFO } from '../data/clinicData';
 import { Link } from './Link';
 
@@ -26,7 +26,7 @@ export const HealthInsightsSection: React.FC<HealthInsightsSectionProps> = ({
               Speech &amp; Hearing Health Insights
             </h2>
             <p className="text-slate-600 text-xs sm:text-base leading-relaxed">
-              Clinical guidance reviewed by Rajvi Vibhakar Parikh (BASLP, AYJNISHD) to help families understand communication milestones, hearing loss signs, and therapy strategies.
+              Educational guides to help families understand communication milestones, hearing health, stuttering, aphasia, and therapy-related questions.
             </p>
           </div>
 
@@ -90,12 +90,7 @@ export const HealthInsightsSection: React.FC<HealthInsightsSectionProps> = ({
               </div>
 
               {/* Card Footer with crawlable Link */}
-              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span className="text-[11px] text-slate-500 flex items-center gap-1 truncate max-w-[200px]">
-                  <UserCheck className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-                  <span className="truncate">Reviewed Oct 2026</span>
-                </span>
-
+              <div className="pt-4 mt-4 border-t border-slate-100 flex items-center justify-end text-xs">
                 <div className="flex items-center gap-2">
                   <Link
                     href={`/insights/${insight.slug}`}
