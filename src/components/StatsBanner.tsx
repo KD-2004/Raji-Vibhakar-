@@ -44,7 +44,7 @@ export const StatsBanner: React.FC = () => {
   ];
 
   return (
-    <section className="content-auto bg-gradient-to-b from-white via-slate-50/60 to-slate-50 py-10 sm:py-14 px-4 sm:px-6 relative overflow-hidden border-b border-slate-200/80">
+    <section className="bg-gradient-to-b from-white via-slate-50/60 to-slate-50 py-10 sm:py-14 px-4 sm:px-6 relative overflow-hidden border-b border-slate-200/80">
       <div className="max-w-6xl mx-auto relative">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-8 pb-4 border-b border-slate-200/80">
