@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from '../utils/motion';
 import { X, Calendar, Phone, Clock, MessageCircle, CheckCircle2, User, AlertCircle, Shield } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import { trackEvent } from '../utils/analytics';
