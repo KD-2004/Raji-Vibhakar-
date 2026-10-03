@@ -36,6 +36,7 @@ jobs:
         run: |
           test -f dist/robots.txt
           test -f dist/sitemap.xml
+          test -f dist/sitemap.txt
           test -f dist/404.html
           test -f dist/googlea55278280a27b6ba.html
           test -f dist/about/index.html
@@ -50,7 +51,9 @@ jobs:
 
           const CANONICAL = 'https://rajvi-vibhakar.netlify.app';
           const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
+          const textSitemap = fs.readFileSync('dist/sitemap.txt', 'utf8').trim();
           const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+          const textUrls = textSitemap.split(/\r?\n/).filter(Boolean);
 
           if (!sitemap.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"')) {
             throw new Error('Sitemap is missing the official sitemap namespace.');
@@ -58,6 +61,10 @@ jobs:
 
           if (urls.length !== 24) {
             throw new Error(`Expected 24 canonical sitemap URLs, found ${urls.length}`);
+          }
+
+          if (textUrls.length !== urls.length || textUrls.some((url, index) => url !== urls[index])) {
+            throw new Error('Text sitemap is not synchronized with the XML sitemap.');
           }
 
           if (new Set(urls).size !== urls.length) {
