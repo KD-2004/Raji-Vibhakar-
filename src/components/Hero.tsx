@@ -330,7 +330,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                 </motion.button>
 
                 <div className="flex items-center justify-between text-[11px] text-slate-600 px-1 pt-1">
-                  <span>Shop 1, Ramkunwar Thakur Marg</span>
+                  <span>Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road</span>
                   <a
                     href={googleLink}
                     target="_blank"
