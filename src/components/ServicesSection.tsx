@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from '../utils/motion';
 import { MessageSquare, Ear, CheckCircle, ArrowRight, ShieldCheck } from 'lucide-react';
 import { SPEECH_SERVICES, HEARING_SERVICES, HEARING_AID_STYLES } from '../data/clinicData';
 import { Link } from './Link';
