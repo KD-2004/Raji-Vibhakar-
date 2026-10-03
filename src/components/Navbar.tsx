@@ -159,7 +159,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
           <motion.button
             whileTap={{ scale: 0.92 }}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 text-slate-600 hover:text-slate-900 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
+            className="lg:hidden min-h-[44px] min-w-[44px] p-2 text-slate-600 hover:text-slate-900 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer inline-flex items-center justify-center"
             aria-label="Toggle navigation menu"
             aria-expanded={mobileMenuOpen}
           >
@@ -182,7 +182,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <Link
                 href="/"
                 onNavigate={handleLinkClick}
-                className="flex items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
+                className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
                 <span>Home</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
