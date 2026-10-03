@@ -379,4 +379,10 @@ const sitemapRoutes = routes.filter((route) => route.path !== '/404').map((route
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapRoutes.join('\n')}\n</urlset>\n`;
 fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXml, 'utf-8');
 
+const sitemapTxt = sitemapRoutes
+  .map((entry) => entry.match(/<loc>([^<]+)<\\/loc>/)?.[1])
+  .filter((url): url is string => Boolean(url))
+  .join('\\n') + '\\n';
+fs.writeFileSync(path.join(DIST_DIR, 'sitemap.txt'), sitemapTxt, 'utf-8');
+
 console.log(`\nAll ${routes.length} routes successfully prerendered into dist/ with static HTML and a real 404 page!`);
