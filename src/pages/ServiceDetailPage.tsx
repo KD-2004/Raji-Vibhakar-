@@ -17,7 +17,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
   onOpenBooking,
 }) => {
   useEffect(() => {
-    const pageTitle = `${service.name} in Dahisar East, Mumbai | Rajvi Vibhakar`;
+    const pageTitle = `${service.customerTitle} | Rajvi Vibhakar`;
     const metaDescription = `${service.description} Rajvi Vibhakar Parikh (BASLP, AYJNISHD) provides this service at the Dahisar East clinic in Mumbai. Call 8898330707 for an appointment.`;
     updatePageMeta(pageTitle, metaDescription, `/${service.slug}`);
     trackEvent('service_page_view', { service_name: service.slug });
@@ -76,7 +76,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
               href={CLINIC_INFO.contact.whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => trackEvent('whatsapp_click', { service: service.slug, source: 'service_page' })}
+              onClick={() => trackEvent('whatsapp_click', { service_name: service.slug, source: 'service_page' })}
               className="inline-flex items-center justify-center gap-2 py-3 px-5 bg-emerald-50 hover:bg-emerald-100 text-emerald-900 border border-emerald-300 rounded-xl text-xs sm:text-sm font-semibold transition-colors cursor-pointer min-h-[44px]"
             >
               <MessageCircle className="w-4 h-4 text-emerald-600" />
