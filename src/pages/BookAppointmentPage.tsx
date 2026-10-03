@@ -293,14 +293,14 @@ Thank you!`;
             {/* Clinical Concern Notes */}
             <div className="space-y-1.5">
               <label htmlFor="patient-notes" className="block text-xs font-semibold text-slate-800">
-                Brief Concern (Optional)
+                Brief Appointment Note (Optional)
               </label>
               <textarea
                 id="patient-notes"
                 rows={2}
                 value={notes}
                 onChange={(e) => setNotes(e.target.value)}
-                placeholder="Mention any specific hearing or speech symptoms..."
+                placeholder="Add a short appointment note if helpful. Please do not include detailed or sensitive medical information."
                 className="w-full p-3 text-base sm:text-sm bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-teal-600 focus:bg-white text-slate-900 transition-all resize-none min-h-[60px]"
               />
             </div>
