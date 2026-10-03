@@ -31,7 +31,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onNavigate }) => 
               <ClinicLogo size="md" />
               <div>
                 <div className="font-bold text-white text-base tracking-tight">
-                  {CLINIC_INFO.businessName}
+                  {CLINIC_INFO.displayBusinessName}
                 </div>
                 <div className="text-[11px] text-teal-400 font-medium">
                   {CLINIC_INFO.professionalName} ({CLINIC_INFO.professionalTitle})
