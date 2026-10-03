@@ -37,20 +37,50 @@ jobs:
           test -f dist/robots.txt
           test -f dist/sitemap.xml
           test -f dist/404.html
+          test -f dist/googlea55278280a27b6ba.html
           test -f dist/about/index.html
           test -f dist/contact/index.html
           test -f dist/insights/index.html
           test -f dist/stuttering-therapy/index.html
           test -f dist/insights/stuttering/index.html
+
           node <<'NODE'
           const fs = require('fs');
           const path = require('path');
 
+          const CANONICAL = 'https://rajvi-vibhakar.netlify.app';
           const sitemap = fs.readFileSync('dist/sitemap.xml', 'utf8');
-          const urls = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m => m[1]);
+          const urls = [...sitemap.matchAll(/<loc>([^<]+)<\\/loc>/g)].map(m => m[1]);
+
+          if (!sitemap.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"')) {
+            throw new Error('Sitemap is missing the official sitemap namespace.');
+          }
 
           if (urls.length !== 24) {
-            throw new Error(`Expected 24 canonical sitemap URLs, found ${urls.length}`);
+            throw new Error(\`Expected 24 canonical sitemap URLs, found \${urls.length}\`);
+          }
+
+          if (new Set(urls).size !== urls.length) {
+            throw new Error('Sitemap contains duplicate URLs.');
+          }
+
+          for (const url of urls) {
+            if (!url.startsWith(CANONICAL + '/')) {
+              throw new Error(\`Sitemap contains a non-canonical URL: \${url}\`);
+            }
+            if (url.endsWith('/404')) {
+              throw new Error('Sitemap must not include the 404 route.');
+            }
+          }
+
+          const verification = fs.readFileSync('dist/googlea55278280a27b6ba.html', 'utf8').trim();
+          if (verification !== 'google-site-verification: googlea55278280a27b6ba.html') {
+            throw new Error('Google Search Console verification file content is incorrect.');
+          }
+
+          const robots = fs.readFileSync('dist/robots.txt', 'utf8');
+          if (!robots.includes('Sitemap: ' + CANONICAL + '/sitemap.xml')) {
+            throw new Error('robots.txt does not reference the canonical sitemap URL.');
           }
 
           const htmlFiles = [];
@@ -75,20 +105,21 @@ jobs:
             'appointment_success',
             'Free Live Hearing Aid Trial',
             'State Rank 1 Specialization',
-            'reviewedBy'
+            'reviewedBy',
+            'rajvivibhakar.com'
           ];
 
           const violations = [];
           for (const file of htmlFiles) {
             const html = fs.readFileSync(file, 'utf8');
             for (const token of banned) {
-              if (html.includes(token)) violations.push(`${file}: ${token}`);
+              if (html.includes(token)) violations.push(\`\${file}: \${token}\`);
             }
           }
 
           if (violations.length) {
-            throw new Error('Production SEO validation failed:\n' + violations.join('\n'));
+            throw new Error('Production SEO validation failed:\\n' + violations.join('\\n'));
           }
 
-          console.log(`Static SEO validation passed: ${urls.length} sitemap URLs, ${htmlFiles.length} HTML files.`);
+          console.log(\`Static SEO validation passed: \${urls.length} sitemap URLs, \${htmlFiles.length} HTML files.\`);
           NODE
