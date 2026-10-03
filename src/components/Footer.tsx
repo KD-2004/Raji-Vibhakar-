@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onNavigate }) => 
   };
 
   return (
-    <footer className="bg-slate-950 text-slate-300 pt-16 pb-12 px-4 sm:px-6 border-t border-slate-800 text-xs sm:text-sm">
+    <footer className="content-auto bg-slate-950 text-slate-300 pt-16 pb-12 px-4 sm:px-6 border-t border-slate-800 text-xs sm:text-sm">
       <div className="max-w-6xl mx-auto space-y-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
           {/* Col 1: Clinic Identity & Verified Credentials */}
