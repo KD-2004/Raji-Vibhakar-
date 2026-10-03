@@ -21,8 +21,9 @@ export function usePath(): [string, (to: string) => void] {
 
   const navigate = (to: string) => {
     if (typeof window !== 'undefined') {
+      const hashIndex = to.indexOf('#');
+
       if (to.startsWith('#')) {
-        // Hash navigation within current page
         const element = document.querySelector(to);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
@@ -30,9 +31,21 @@ export function usePath(): [string, (to: string) => void] {
         return;
       }
 
+      const pathname = hashIndex >= 0 ? to.slice(0, hashIndex) || '/' : to;
+      const hash = hashIndex >= 0 ? to.slice(hashIndex + 1) : '';
+
       window.history.pushState({}, '', to);
-      setPath(to);
+      setPath(pathname);
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (hash) {
+        window.setTimeout(() => {
+          const element = document.getElementById(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 0);
+      }
     }
   };
 
