@@ -23,8 +23,8 @@ export const BookAppointmentPage: React.FC<BookAppointmentPageProps> = ({ onNavi
 
   useEffect(() => {
     updatePageMeta(
-      `Book Speech & Hearing Appointment | Dahisar East | Rajvi Vibhakar`,
-      `Schedule a hearing assessment, hearing aid trial, or speech therapy evaluation with Rajvi Vibhakar Parikh in Dahisar East, Mumbai. Call 8898330707.`,
+      `Book Consultation | Hearing Test & Speech Therapy in Dahisar East`,
+      `Reserve your hearing test, digital hearing aid trial, or speech-language therapy consultation at our Dahisar East clinic. Call or WhatsApp 8898330707.`,
       `/book-appointment`
     );
     trackEvent('appointment_open', { source: 'book_page' });
