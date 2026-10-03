@@ -11,7 +11,7 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faqs" className="content-auto py-16 md:py-24 bg-white border-b border-slate-200">
+    <section id="faqs" className="py-16 md:py-24 bg-white border-b border-slate-200">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
