@@ -65,7 +65,7 @@ export const FAQSection: React.FC = () => {
                   >
                     <ChevronDown
                       className={`w-4 h-4 transition-colors ${
-                        isOpen ? 'text-teal-700' : 'text-slate-400'
+                        isOpen ? 'text-teal-700' : 'text-slate-500'
                       }`}
                     />
                   </motion.div>
