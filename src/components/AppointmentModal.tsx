@@ -81,7 +81,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
 
     trackEvent('appointment_submit', { method: 'whatsapp', service_name: selectedService });
 
-    const text = `Hello ${CLINIC_INFO.businessName},
+    const text = `Hello ${CLINIC_INFO.displayBusinessName},
 I would like to book an appointment at Rajvi Vibhakar’s Speech & Hearing Clinic.
 
 Patient Name: ${patientName}
@@ -146,7 +146,7 @@ Thank you!`;
                   Schedule Your Consultation
                 </h2>
                 <p className="text-xs text-slate-600 mt-1">
-                  At <strong>{CLINIC_INFO.businessName}</strong> · {CLINIC_INFO.professionalName} ({CLINIC_INFO.professionalTitle})
+                  At <strong>{CLINIC_INFO.displayBusinessName}</strong> · {CLINIC_INFO.professionalName} ({CLINIC_INFO.professionalTitle})
                 </p>
               </div>
 
@@ -369,7 +369,7 @@ Thank you!`;
                   Please Tap "Send" in WhatsApp
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-2 max-w-md mx-auto leading-relaxed">
-                  Your appointment request for <strong>{patientName}</strong> has been loaded into WhatsApp. Please send the message to deliver your inquiry to our clinic.
+                  Your appointment request for <strong>{patientName}</strong> has been loaded into WhatsApp. Please send the message to deliver your inquiry to Rajvi Vibhakar’s clinic.
                 </p>
               </div>
 
