@@ -14,7 +14,7 @@
 
   <!-- Credentials -->
   <text x="80" y="340" fill="#ccfbf1" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="500">Rajvi Vibhakar Parikh · BASLP (AYJNISHD, Mumbai)</text>
-  <text x="80" y="375" fill="#99f6e4" font-family="system-ui, -apple-system, sans-serif" font-size="20">State Merit Rank 1 in Motor Speech Disorders (2020)</text>
+  <text x="80" y="375" fill="#99f6e4" font-family="system-ui, -apple-system, sans-serif" font-size="20">State Merit Rank 1 under MUHS in Motor Speech Disorders (2020)</text>
 
   <!-- Services list -->
   <line x1="80" y1="415" x2="1120" y2="415" stroke="#134e4a" stroke-width="2"/>
