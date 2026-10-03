@@ -32,7 +32,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
     <div className="bg-slate-50 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-10">
         {/* Breadcrumb Navigation with crawlable Links */}
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500 flex items-center gap-1.5 flex-wrap">
+        <nav aria-label="Breadcrumb" className="text-xs text-slate-600 flex items-center gap-1.5 flex-wrap">
           <Link href="/" onNavigate={onNavigate} className="hover:text-teal-700 underline">
             Home
           </Link>
@@ -184,11 +184,11 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
                     <h3 className="text-xs sm:text-sm font-bold text-slate-900 group-hover:text-teal-700 transition-colors">
                       {rel.name}
                     </h3>
-                    <p className="text-xs text-slate-500 mt-1 line-clamp-2">
+                    <p className="text-xs text-slate-600 mt-1 line-clamp-2">
                       {rel.tagline}
                     </p>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-teal-600 shrink-0 mt-0.5 transition-colors" />
+                  <ArrowRight className="w-4 h-4 text-slate-500 group-hover:text-teal-600 shrink-0 mt-0.5 transition-colors" />
                 </Link>
               ))}
             </div>
