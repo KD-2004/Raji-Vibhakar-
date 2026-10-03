@@ -49,9 +49,9 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
             <span className="font-semibold px-2.5 py-0.5 rounded-full bg-teal-50 text-teal-800 border border-teal-200">
               {insight.category}
             </span>
-            <span className="text-slate-400">·</span>
+            <span className="text-slate-500" aria-hidden="true">·</span>
             <span className="text-slate-500">{insight.readTime}</span>
-            <span className="text-slate-400">·</span>
+            <span className="text-slate-500" aria-hidden="true">·</span>
             <span className="text-slate-500">Educational resource</span>
           </div>
 
