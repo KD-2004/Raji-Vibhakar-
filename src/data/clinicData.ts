@@ -481,7 +481,7 @@ export const FAQS = [
     question: "Who should I see for a hearing problem in Dahisar East?",
     answer: "An audiologist can evaluate hearing problems and perform tests such as Pure Tone Audiometry. Medical ear conditions or symptoms may also require assessment by an ENT physician.",
   },
-
+  {
     question: "Where is the clinic located in Dahisar East?",
     answer: "The clinic is located at Shop No. 1, Ramkunwar Thakur Marg, opposite Pragati Hospital, Krishna Colony, Dahisar East, Mumbai 400068.",
   },
