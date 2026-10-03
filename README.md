@@ -1,6 +1,6 @@
-# Rajvi Vibhakar Speech & Hearing
+# Rajvi Vibhakar’s Speech & Hearing
 
-Production website for Rajvi Vibhakar Parikh, Audiologist & Speech-Language Therapist, serving Dahisar East, Mumbai.
+Production website for Rajvi Vibhakar Parikh, Audiologist & Speech-Language Therapist.
 
 ## Verified business information
 
