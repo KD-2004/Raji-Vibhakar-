@@ -68,7 +68,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking, onNavigate }) => 
                 onClick={() => trackEvent('review_link_click', { source: 'footer_review_cta' })}
                 className="inline-flex items-center gap-1 px-3 py-1.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-700 transition-colors text-[11px]"
               >
-                <span>Leave a Google Review</span>
+                <span>View Google Reviews</span>
                 <ExternalLink className="w-2.5 h-2.5 opacity-60" />
               </a>
             </div>
