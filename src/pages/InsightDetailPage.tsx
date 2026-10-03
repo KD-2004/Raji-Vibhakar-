@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Calendar, MessageCircle, ArrowRight, UserCheck, CheckCircle2, BookOpen } from 'lucide-react';
+import { Calendar, MessageCircle, ArrowRight, CheckCircle2, BookOpen } from 'lucide-react';
 import { HealthInsight, CLINIC_INFO, ALL_SERVICES } from '../data/clinicData';
 import { updatePageMeta } from '../utils/router';
 import { Link } from '../components/Link';
