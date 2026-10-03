@@ -190,7 +190,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <Link
                 href="/#services"
                 onNavigate={handleLinkClick}
-                className="flex items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
+                className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
                 <span>Our Speech &amp; Hearing Services</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -198,7 +198,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <Link
                 href="/#hearing-aids"
                 onNavigate={handleLinkClick}
-                className="flex items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
+                className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
                 <span>Hearing Aid Form Factors</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -206,7 +206,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <Link
                 href="/insights"
                 onNavigate={handleLinkClick}
-                className="flex items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
+                className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
                 <span>Health Insights &amp; Articles</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -214,7 +214,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <Link
                 href="/about"
                 onNavigate={handleLinkClick}
-                className="flex items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
+                className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
                 <span>About Rajvi Vibhakar Parikh</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
@@ -222,7 +222,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               <Link
                 href="/contact"
                 onNavigate={handleLinkClick}
-                className="flex items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
+                className="flex min-h-[44px] items-center justify-between text-left px-3.5 py-2.5 rounded-xl hover:bg-teal-50 hover:text-teal-900 transition-colors"
               >
                 <span>Clinic Location &amp; Directions (Dahisar East)</span>
                 <ChevronRight className="w-4 h-4 text-slate-400" />
