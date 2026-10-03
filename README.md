@@ -25,14 +25,15 @@ The build creates statically prerendered HTML for the public routes, plus `404.h
 
 ## Deployment
 
-### Vercel
+### Netlify
 
-The repository includes `vercel.json`.
+The repository includes `netlify.toml`.
 
-- Framework: Vite
+- Framework/build: Vite
 - Build command: `npm run build`
 - Output directory: `dist`
-- Node: 22.x (from `package.json` engines)
+- Node: 22.x
+- Security and asset-cache headers are defined in `netlify.toml`
 
 The important pages are statically generated, so no blanket SPA rewrite is required. The generated `404.html` remains the fallback for invalid URLs.
 
