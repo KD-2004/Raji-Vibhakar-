@@ -141,7 +141,7 @@ routes.push({
   path: '/contact',
   outputPath: path.join(DIST_DIR, 'contact', 'index.html'),
   title: `Contact Clinic in Dahisar East, Mumbai | Rajvi Vibhakar Speech & Hearing`,
-  description: `Visit our Dahisar East clinic opposite Pragati Hospital on Ramkunwar Thakur Marg. Phone: 8898330707. Mon-Sat 9AM-8PM. Multilingual audiology and speech therapy.`,
+  description: `Visit Rajvi Vibhakar Speech & Hearing Clinic at Shop No. 1, Ramkunwar Thakur Marg, opposite Pragati Hospital, Dahisar East, Mumbai 400068. Call 8898330707.`,
   schema: {
     '@context': 'https://schema.org',
     '@graph': [
