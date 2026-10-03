@@ -36,7 +36,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
 
         <header className="space-y-2">
           <span className="text-xs font-bold text-teal-700 uppercase tracking-wider block">
-            Rajvi Vibhakar’s Speech & Hearing Practice
+            Rajvi Vibhakar’s Speech &amp; Hearing Clinic
           </span>
           <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
             Clinic Contact &amp; Location Information
@@ -148,7 +148,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                   </span>
                 </div>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                  Open directions on your navigation app to travel directly to Rajvi Vibhakar’s Speech & Hearing Clinic on R.T. Road, opposite Pragati Hospital.
+                  Open directions on your navigation app to travel directly to Rajvi Vibhakar’s Speech &amp; Hearing Clinic on R.T. Road, opposite Pragati Hospital.
                 </p>
 
                 {/* Clear Location Box */}
