@@ -18,7 +18,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 }) => {
   useEffect(() => {
     const pageTitle = `${service.customerTitle} | Rajvi Vibhakar`;
-    const metaDescription = `${service.description} Rajvi Vibhakar Parikh (BASLP, AYJNISHD) provides this service at the Dahisar East clinic in Mumbai. Call 8898330707 for an appointment.`;
+    const metaDescription = `${service.description} Rajvi Vibhakar Parikh (BASLP, AYJNISHD) provides this service at Rajvi Vibhakar’s Speech &amp; Hearing Clinic in Mumbai. Call 8898330707 for an appointment.`;
     updatePageMeta(pageTitle, metaDescription, `/${service.slug}`);
     trackEvent('service_page_view', { service_name: service.slug });
   }, [service]);
@@ -49,7 +49,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           <div className="flex items-center gap-2 text-xs font-bold text-teal-700 uppercase tracking-wider">
             <span>{service.category === 'speech' ? 'Speech-Language Therapy' : 'Audiology & Hearing Care'}</span>
             <span>·</span>
-            <span>Dahisar East, Mumbai</span>
+            <span>Rajvi Vibhakar’s Speech &amp; Hearing</span>
           </div>
 
           <h1 className="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
@@ -158,7 +158,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
             {CLINIC_INFO.professionalName} · {CLINIC_INFO.degrees}
           </h3>
           <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
-            {CLINIC_INFO.professionalTitle}. Achieved State Merit Rank 1 under MUHS in Motor Speech Disorders (2020). Consultations are conducted directly at our Dahisar East clinic.
+            {CLINIC_INFO.professionalTitle}. Achieved State Merit Rank 1 under MUHS in Motor Speech Disorders (2020). Consultations are conducted directly at Rajvi Vibhakar’s Speech &amp; Hearing Clinic.
           </p>
           <div className="pt-2 text-xs text-slate-600 flex items-center gap-1.5">
             <MapPin className="w-4 h-4 text-teal-700 shrink-0" />
