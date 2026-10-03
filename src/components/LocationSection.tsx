@@ -21,8 +21,8 @@ export const LocationSection: React.FC = () => {
     if (navigator.share) {
       try {
         await navigator.share({
-          title: "Rajvi Vibhakar Speech & Hearing Clinic",
-          text: `Visit Rajvi Vibhakar Speech & Hearing Clinic in Dahisar East, Mumbai: ${CLINIC_INFO.location.fullAddress}`,
+          title: "Rajvi Vibhakar’s Speech & Hearing Clinic",
+          text: `Visit Rajvi Vibhakar’s Speech & Hearing Clinic: ${CLINIC_INFO.location.fullAddress}`,
           url: googleLink,
         });
         setShared(true);
@@ -53,13 +53,13 @@ export const LocationSection: React.FC = () => {
           <div className="flex items-center gap-2 text-xs font-semibold text-teal-700 tracking-wider uppercase mb-2">
             <span>Clinic Location &amp; Directions</span>
             <span aria-hidden="true">·</span>
-            <span>Dahisar East, Mumbai</span>
+            <span>Rajvi Vibhakar’s Speech &amp; Hearing</span>
           </div>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
-            Visit Our Dahisar East Clinic
+            Visit Rajvi Vibhakar’s Speech &amp; Hearing Clinic
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
-            Located in Rajaram Mahtre Welfare Association on R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai.
+            Located in Rajaram Mahtre Welfare Association on R.T. Road, opposite Pragati Hospital, Mumbai.
           </p>
         </motion.div>
 
@@ -275,7 +275,7 @@ export const LocationSection: React.FC = () => {
                     </span>
                   </div>
                   <span className="text-[11px] text-slate-500 font-mono">
-                    Dahisar East, Mumbai
+                    Rajvi Vibhakar’s Speech &amp; Hearing
                   </span>
                 </div>
 
@@ -284,7 +284,7 @@ export const LocationSection: React.FC = () => {
                     Rajvi Vibhakar
                   </h4>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                    Speech &amp; hearing specialist located at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital.
+                    Speech &amp; hearing specialist located at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, opposite Pragati Hospital.
                   </p>
                 </div>
 
@@ -314,8 +314,8 @@ export const LocationSection: React.FC = () => {
                 <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
                   <Train className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                   <div>
-                    <strong className="text-slate-900">From Dahisar Railway Station: </strong>
-                    Take the East exit towards R.T. Road, Dahisar East, opposite Pragati Hospital.
+                    <strong className="text-slate-900">From the railway station: </strong>
+                    Take the East exit towards R.T. Road, opposite Pragati Hospital.
                   </div>
                 </div>
 
@@ -323,7 +323,7 @@ export const LocationSection: React.FC = () => {
                   <Bus className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-slate-900">From Western Express Highway: </strong>
-                    Convenient turnoff in Dahisar East. Landmark: Opposite Pragati Hospital.
+                    Convenient turnoff. Landmark: Opposite Pragati Hospital.
                   </div>
                 </div>
               </div>
