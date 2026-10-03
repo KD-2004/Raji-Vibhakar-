@@ -26,7 +26,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
     <div className="bg-slate-50 py-10 sm:py-16">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
         {/* Breadcrumb with real links */}
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500 flex items-center gap-1.5">
+        <nav aria-label="Breadcrumb" className="text-xs text-slate-600 flex items-center gap-1.5">
           <Link href="/" onNavigate={onNavigate} className="hover:text-teal-700 underline">
             Home
           </Link>
@@ -102,7 +102,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                     <div className="text-slate-600 mt-0.5">
                       Monday – Saturday: 9:00 AM – 8:00 PM
                     </div>
-                    <div className="text-slate-500 text-xs mt-0.5">
+                    <div className="text-slate-600 text-xs mt-0.5">
                       Sunday: By Prior Appointment / Closed
                     </div>
                   </div>
@@ -157,7 +157,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate, onOpenBook
                   <div className="text-xs font-semibold text-slate-800">
                     {CLINIC_INFO.businessName}
                   </div>
-                  <div className="text-[11px] text-slate-500 max-w-xs mx-auto">
+                  <div className="text-[11px] text-slate-600 max-w-xs mx-auto">
                     {loc.fullAddress}
                   </div>
                 </div>
