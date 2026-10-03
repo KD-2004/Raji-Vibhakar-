@@ -231,7 +231,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                     </span>
                   </div>
                   <h2 className="text-base sm:text-lg font-bold text-slate-900 truncate">
-                    {CLINIC_INFO.businessName}
+                    {CLINIC_INFO.displayBusinessName}
                   </h2>
                   <p className="text-xs text-slate-600 font-medium truncate">
                     {CLINIC_INFO.professionalName} · {CLINIC_INFO.degrees}
