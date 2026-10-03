@@ -181,7 +181,7 @@ routes.push({
 routes.push({
   path: '/privacy-policy',
   outputPath: path.join(DIST_DIR, 'privacy-policy', 'index.html'),
-  title: `Privacy Policy | Rajvi Vibhakar Speech & Hearing Clinic`,
+  title: `Privacy Policy | Rajvi Vibhakar’s Speech & Hearing Clinic`,
   description: `Our healthcare privacy policy explains how appointment inquiries and patient contact data are safeguarded in strict confidence without advertising tracking.`,
   schema: {
     '@context': 'https://schema.org',
@@ -222,7 +222,7 @@ for (const insight of HEALTH_INSIGHTS) {
   routes.push({
     path: `/insights/${insight.slug}`,
     outputPath: path.join(DIST_DIR, 'insights', insight.slug, 'index.html'),
-    title: `${insight.title} | Rajvi Vibhakar Speech & Hearing`,
+    title: `${insight.title} | Rajvi Vibhakar’s Speech & Hearing`,
     description: insight.excerpt,
     schema: {
       '@context': 'https://schema.org',
@@ -289,7 +289,7 @@ for (const service of ALL_SERVICES) {
 routes.push({
   path: '/404',
   outputPath: path.join(DIST_DIR, '404.html'),
-  title: 'Page Not Found (404) | Rajvi Vibhakar Speech & Hearing',
+  title: 'Page Not Found (404) | Rajvi Vibhakar’s Speech & Hearing',
   description: 'The requested page could not be found. Explore audiology services, hearing assessments, and speech therapy from Rajvi Vibhakar’s Speech & Hearing Clinic.',
   schema: {
     '@context': 'https://schema.org',
