@@ -75,7 +75,7 @@ export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onNavigate, onOpenBo
                 className="p-3 rounded-xl bg-white border border-slate-200 hover:border-teal-400 hover:shadow-xs transition-all flex items-center justify-between text-xs text-slate-800 font-semibold group"
               >
                 <span className="group-hover:text-teal-700 transition-colors">{service.name}</span>
-                <ArrowRight className="w-3.5 h-3.5 text-slate-400 group-hover:text-teal-600 transition-colors" />
+                <ArrowRight className="w-3.5 h-3.5 text-slate-500 group-hover:text-teal-600 transition-colors" />
               </Link>
             ))}
           </div>
