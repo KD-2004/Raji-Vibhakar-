@@ -60,3 +60,5 @@ Medical/educational content should be reviewed by the clinician before being pre
 ## Source
 
 The implementation uses a React/Vite frontend with static prerendering and a privacy-safe analytics utility. The website does not claim an appointment has been delivered merely because WhatsApp was opened.
+
+<!-- Netlify production redeploy trigger: 2026-10-03 -->
