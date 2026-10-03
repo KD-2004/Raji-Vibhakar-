@@ -21,7 +21,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
     <div className="bg-slate-50 py-10 sm:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 space-y-8">
         {/* Breadcrumb */}
-        <nav aria-label="Breadcrumb" className="text-xs text-slate-500 flex items-center gap-1.5">
+        <nav aria-label="Breadcrumb" className="text-xs text-slate-600 flex items-center gap-1.5">
           <Link href="/" onNavigate={onNavigate} className="hover:text-teal-700 underline">
             Home
           </Link>
