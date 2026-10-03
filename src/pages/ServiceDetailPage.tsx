@@ -18,7 +18,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
 }) => {
   useEffect(() => {
     const pageTitle = `${service.name} in Dahisar East, Mumbai | Rajvi Vibhakar`;
-    const metaDescription = `${service.customerTitle} at Rajvi Vibhakar Speech & Hearing Clinic, Dahisar East, Mumbai. Clinical care by Rajvi Vibhakar Parikh (BASLP, AYJNISHD). Call 8898330707.`;
+    const metaDescription = `${service.description} Rajvi Vibhakar Parikh (BASLP, AYJNISHD) provides this service at the Dahisar East clinic in Mumbai. Call 8898330707 for an appointment.`;
     updatePageMeta(pageTitle, metaDescription, `/${service.slug}`);
     trackEvent('service_page_view', { service_name: service.slug });
   }, [service]);
@@ -64,7 +64,7 @@ export const ServiceDetailPage: React.FC<ServiceDetailPageProps> = ({
           <div className="pt-4 flex flex-col sm:flex-row gap-3 border-t border-slate-100">
             <button
               onClick={() => {
-                trackEvent('appointment_open', { service: service.slug, source: 'service_page_cta' });
+                trackEvent('appointment_open', { service_name: service.slug, source: 'service_page_cta' });
                 onOpenBooking();
               }}
               className="inline-flex items-center justify-center gap-2 py-3 px-6 bg-teal-700 hover:bg-teal-800 text-white rounded-xl text-xs sm:text-sm font-semibold transition-colors shadow-xs cursor-pointer min-h-[44px]"
