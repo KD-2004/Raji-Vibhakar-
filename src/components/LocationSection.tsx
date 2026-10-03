@@ -59,7 +59,7 @@ export const LocationSection: React.FC = () => {
             Visit Our Dahisar East Clinic
           </h2>
           <p className="text-slate-600 text-sm sm:text-base mt-3 leading-relaxed">
-            Located on Ramkunwar Thakur Marg directly opposite Pragati Hospital in Krishna Colony, Dahisar East, Mumbai.
+            Located in Rajaram Mahtre Welfare Association on R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai.
           </p>
         </motion.div>
 
@@ -284,7 +284,7 @@ export const LocationSection: React.FC = () => {
                     Rajvi Vibhakar
                   </h4>
                   <p className="text-xs text-slate-300 mt-1 leading-relaxed">
-                    Speech &amp; hearing specialist located at Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Krishna Colony, Dahisar East.
+                    Speech &amp; hearing specialist located at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital.
                   </p>
                 </div>
 
@@ -315,7 +315,7 @@ export const LocationSection: React.FC = () => {
                   <Train className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-slate-900">From Dahisar Railway Station: </strong>
-                    Take the East exit towards Ramkunwar Thakur Marg opposite Pragati Hospital in Krishna Colony.
+                    Take the East exit towards R.T. Road, Dahisar East, opposite Pragati Hospital.
                   </div>
                 </div>
 
@@ -323,7 +323,7 @@ export const LocationSection: React.FC = () => {
                   <Bus className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                   <div>
                     <strong className="text-slate-900">From Western Express Highway: </strong>
-                    Convenient turnoff near Dahisar East. Landmark: Directly opposite Pragati Hospital in Krishna Colony.
+                    Convenient turnoff in Dahisar East. Landmark: Opposite Pragati Hospital.
                   </div>
                 </div>
               </div>
