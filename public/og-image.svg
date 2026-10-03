@@ -6,10 +6,10 @@
 
   <!-- Top Location & Badge -->
   <rect x="80" y="80" width="310" height="44" rx="22" fill="#134e4a" stroke="#2dd4bf" stroke-width="1.5"/>
-  <text x="110" y="108" fill="#5eead4" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="1">DAHISAR EAST, MUMBAI</text>
+  <text x="110" y="108" fill="#5eead4" font-family="system-ui, -apple-system, sans-serif" font-size="18" font-weight="700" letter-spacing="1">RAJVI VIBHAKAR’S SPEECH &amp; HEARING</text>
 
   <!-- Title -->
-  <text x="80" y="210" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800">Rajvi Vibhakar Speech &amp; Hearing</text>
+  <text x="80" y="210" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="800">Rajvi Vibhakar’s Speech &amp; Hearing</text>
   <text x="80" y="275" fill="#2dd4bf" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="600">Audiologist &amp; Speech-Language Therapist</text>
 
   <!-- Credentials -->
