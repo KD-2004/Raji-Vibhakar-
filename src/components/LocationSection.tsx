@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from 'motion/react';
+import { motion } from '../utils/motion';
 import { MapPin, Phone, Mail, Clock, Navigation, ExternalLink, ShieldCheck, Bus, Train, Copy, Check, Share2, Star, MessageCircle } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import { trackEvent } from '../utils/analytics';
