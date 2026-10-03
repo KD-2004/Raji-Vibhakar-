@@ -19,7 +19,7 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
   useEffect(() => {
     updatePageMeta(
       `${insight.title} | Rajvi Vibhakar Speech & Hearing`,
-      `${insight.excerpt} Medically reviewed by Rajvi Vibhakar Parikh, Audiologist & Speech-Language Pathologist, Dahisar East.`,
+      insight.excerpt,
       `/insights/${insight.slug}`
     );
     trackEvent('article_view', { article_id: insight.slug });
@@ -52,25 +52,27 @@ export const InsightDetailPage: React.FC<InsightDetailPageProps> = ({
             <span className="text-slate-400">·</span>
             <span className="text-slate-500">{insight.readTime}</span>
             <span className="text-slate-400">·</span>
-            <span className="text-slate-500">Reviewed {insight.lastReviewed}</span>
+            <span className="text-slate-500">Published {insight.publishedDate}</span>
           </div>
 
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug">
             {insight.title}
           </h1>
 
-          {/* Author & Reviewer Credit Box (Spec Section M) */}
-          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2 text-xs text-slate-700">
+          {/* Article information */}
+          <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3 text-xs text-slate-700">
             <div className="flex items-start gap-2.5">
-              <UserCheck className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
+              <BookOpen className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
               <div>
-                <div><strong>Author:</strong> {insight.author}</div>
-                <div className="text-slate-600 mt-0.5"><strong>Reviewer:</strong> {insight.reviewer}</div>
-                <div className="text-[11px] text-slate-500 mt-1">Published: {insight.publishedDate} · Last Reviewed: {insight.lastReviewed}</div>
+                <div className="font-semibold text-slate-900">Educational health article</div>
+                <div className="text-slate-600 mt-0.5">Published: {insight.publishedDate}</div>
+                <div className="text-[11px] text-slate-500 mt-1">
+                  General information only. This article does not replace an individual clinical evaluation.
+                </div>
               </div>
             </div>
 
-            {/* Clinical Evidence Sources */}
+          {/* Clinical Evidence Sources */}
             <div className="pt-2 border-t border-slate-200/80 text-[11px] text-slate-600">
               <span className="font-semibold text-slate-800 block mb-1">Clinical Sources &amp; Literature:</span>
               <ul className="list-disc pl-4 space-y-0.5">
