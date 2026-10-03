@@ -81,14 +81,14 @@ export const LocationSection: React.FC = () => {
                 <div className="space-y-1 min-w-0">
                   <div className="flex items-center justify-between">
                     <span className="text-[11px] font-bold text-teal-700 uppercase tracking-wider">
-                      Clinic Address
+                      Rajvi Vibhakar’s Clinic Address
                     </span>
                     <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                       Open Mon–Sat
                     </span>
                   </div>
                   <h3 className="text-lg font-bold text-slate-900">
-                    {CLINIC_INFO.businessName}
+                    {CLINIC_INFO.displayBusinessName}
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-800 leading-relaxed font-semibold">
                     {CLINIC_INFO.location.shopAndStreet}
@@ -165,7 +165,7 @@ export const LocationSection: React.FC = () => {
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-2 text-xs font-bold text-slate-900 uppercase tracking-wider">
                   <Clock className="w-4 h-4 text-teal-600" />
-                  <span>Clinic Timings</span>
+                  <span>Rajvi Vibhakar’s Clinic Timings</span>
                 </div>
                 <span className="text-[11px] font-semibold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
                   Opens 9:00 AM
@@ -308,7 +308,7 @@ export const LocationSection: React.FC = () => {
               {/* Transit Directions Guide */}
               <div className="space-y-3 text-xs text-slate-600">
                 <div className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-                  How to Reach Our Clinic
+                  How to Reach Rajvi Vibhakar’s Clinic
                 </div>
 
                 <div className="flex items-start gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100">
