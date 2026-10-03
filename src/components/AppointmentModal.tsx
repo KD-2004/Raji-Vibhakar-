@@ -79,7 +79,7 @@ export const AppointmentModal: React.FC<AppointmentModalProps> = ({
     e.preventDefault();
     if (!validate()) return;
 
-    trackEvent('appointment_submit', { method: 'whatsapp', service: selectedService });
+    trackEvent('appointment_submit', { method: 'whatsapp', service_name: selectedService });
 
     const text = `Hello ${CLINIC_INFO.businessName},
 I would like to book an appointment at your Dahisar East clinic.
@@ -99,7 +99,7 @@ Thank you!`;
     const waUrl = `${CLINIC_INFO.contact.whatsappLink}?text=${encodeURIComponent(text)}`;
     window.open(waUrl, '_blank', 'noopener,noreferrer');
     setIsDeliveredViaWhatsApp(true);
-    trackEvent('appointment_whatsapp_opened', { method: 'whatsapp', service: selectedService });
+    trackEvent('appointment_whatsapp_opened', { method: 'whatsapp', service_name: selectedService });
   };
 
   const handleResetAndClose = () => {
