@@ -66,7 +66,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
               </p>
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5 text-xs text-slate-700">
                 <div>
-                  <strong>Important Notice on WhatsApp Use:</strong> When you click to initiate or send a message via WhatsApp, communication is processed through WhatsApp (Meta Platforms, Inc.). Messages sent over WhatsApp are subject to WhatsApp's own Terms of Service and Privacy Policy, utilizing WhatsApp's end-to-end encryption.
+                  <strong>Important Notice on WhatsApp Use:</strong> When you click to initiate or send a message via WhatsApp, communication is processed through WhatsApp (Meta Platforms, Inc.). Messages sent through WhatsApp are subject to WhatsApp's own Terms of Service and Privacy Policy. Information handled by WhatsApp is governed by WhatsApp's systems and policies.
                 </div>
                 <div className="text-slate-600 mt-1">
                   The clinic itself does not disclose or share your appointment information with any unauthorized commercial parties.
@@ -112,7 +112,7 @@ export const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate
               5. Data Retention & Access Rights
             </h2>
             <p>
-              Inquiry information retained for appointment scheduling is kept securely within authorized clinic records only as long as necessary to coordinate clinical care and fulfill healthcare documentation requirements. You may contact us at any time to request updates or deletion of your contact records.
+              Appointment enquiry information may be retained by the clinic as needed to respond to enquiries, manage appointments, and meet applicable record-keeping obligations. Requests about your personal information can be sent to the clinic using the contact details below.
             </p>
           </section>
 
