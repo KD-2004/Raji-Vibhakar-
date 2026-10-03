@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from '../utils/motion';
 import { BookOpen, ArrowRight, CheckCircle2 } from 'lucide-react';
 import { HEALTH_INSIGHTS, CLINIC_INFO } from '../data/clinicData';
 import { Link } from './Link';
