@@ -510,10 +510,7 @@ export interface HealthInsight {
   category: 'Hearing Health' | 'Speech Therapy' | 'Child Development';
   readTime: string;
   publishedDate: string;
-  lastReviewed: string;
   excerpt: string;
-  author: string;
-  reviewer: string;
   keyTakeaways: string[];
   fullContent: string[];
   clinicalSources: { title: string; url?: string }[];
@@ -528,13 +525,10 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     category: 'Hearing Health',
     readTime: '4 min read',
     publishedDate: '2026-10-01',
-    lastReviewed: 'October 2026',
-    excerpt: 'Hearing loss often begins gradually with high-frequency consonants (such as s, f, th), making speech sound muffled rather than completely quiet.',
-    author: 'Rajvi Vibhakar Parikh, Audiologist & Speech-Language Therapist',
-    reviewer: 'Reviewed by Rajvi Vibhakar Parikh (BASLP, AYJNISHD)',
+    excerpt: 'Hearing loss can develop gradually, and some people first notice reduced speech clarity, especially in noisy settings.',
     clinicalSources: [
-      { title: 'American Speech-Language-Hearing Association (ASHA) — Adult Hearing Screening Guidelines' },
-      { title: 'Indian Speech and Hearing Association (ISHA) — Clinical Practice Protocols' },
+      { title: 'American Speech-Language-Hearing Association (ASHA) — Hearing Loss in Adults', url: 'https://www.asha.org/practice-portal/clinical-topics/hearing-loss/' },
+      { title: 'American Speech-Language-Hearing Association (ASHA) — Adult Hearing Screening', url: 'https://www.asha.org/practice-portal/professional-issues/adult-hearing-screening/' },
     ],
     relatedServiceSlug: 'pure-tone-audiometry',
     keyTakeaways: [
@@ -556,13 +550,10 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     category: 'Child Development',
     readTime: '5 min read',
     publishedDate: '2026-10-01',
-    lastReviewed: 'October 2026',
-    excerpt: 'Developmental milestones help parents and educators identify when speech or language patterns warrant a professional clinical evaluation.',
-    author: 'Rajvi Vibhakar Parikh, Audiologist & Speech-Language Therapist',
-    reviewer: 'Reviewed by Rajvi Vibhakar Parikh (BASLP, AYJNISHD)',
+    excerpt: 'Developmental milestones can help families understand communication development and decide when to seek professional guidance.',
     clinicalSources: [
-      { title: 'Rehabilitation Council of India (RCI) — Developmental Milestones & Communication Protocols' },
-      { title: 'Indian Speech and Hearing Association (ISHA) — Pediatric Guidelines' },
+      { title: 'ASHA — Developmental Milestones: Birth to 5 Years', url: 'https://www.asha.org/public/developmental-milestones/' },
+      { title: 'ASHA — Typical Speech and Language Development', url: 'https://www.asha.org/public/speech/development/' },
     ],
     relatedServiceSlug: 'speech-therapy-dahisar-east',
     keyTakeaways: [
@@ -584,13 +575,10 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     category: 'Speech Therapy',
     readTime: '4 min read',
     publishedDate: '2026-10-01',
-    lastReviewed: 'October 2026',
-    excerpt: 'Stuttering is a neurodevelopmental variation in speech timing and motor coordination that can be managed through structured clinical techniques.',
-    author: 'Rajvi Vibhakar Parikh, Audiologist & Speech-Language Therapist',
-    reviewer: 'Reviewed by Rajvi Vibhakar Parikh (BASLP, AYJNISHD)',
+    excerpt: 'Stuttering involves interruptions in the flow of speech and can affect communication in different ways across the lifespan.',
     clinicalSources: [
-      { title: 'International Fluency Association (IFA) — Clinical Resources on Stuttering' },
-      { title: 'ASHA — Stuttering Evidence Maps and Intervention Protocols' },
+      { title: 'ASHA — Stuttering, Cluttering, and Fluency', url: 'https://www.asha.org/practice-portal/clinical-topics/fluency-disorders' },
+      { title: 'ASHA Practice Portal', url: 'https://www.asha.org/practice-portal/' },
     ],
     relatedServiceSlug: 'stuttering-therapy',
     keyTakeaways: [
@@ -602,7 +590,7 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     fullContent: [
       'Stuttering involves interruptions in the forward flow of speech. It is not caused by emotional weakness or lack of intelligence; rather, it reflects differences in how the brain coordinates the complex muscular timing required for speech.',
       'Clinical therapy provides practical tools: gentle phonatory onset, smooth articulatory contact, and strategies for managing moments of tension without avoidance.',
-      'In young children, early intervention often supports rapid fluency gains. In teenagers and adults, therapy focuses on confidence, ease, and functional communication in everyday life.',
+      'Support for stuttering is individualized. In children, clinicians consider developmental history and communication needs; in adolescents and adults, therapy may address communication goals, speech behaviors, and participation in everyday situations.',
     ],
   },
   {
@@ -612,17 +600,14 @@ export const HEALTH_INSIGHTS: HealthInsight[] = [
     category: 'Speech Therapy',
     readTime: '5 min read',
     publishedDate: '2026-10-01',
-    lastReviewed: 'October 2026',
-    excerpt: 'When a stroke affects language centers in the brain, targeted speech-language therapy utilizes neuroplasticity to support communication recovery.',
-    author: 'Rajvi Vibhakar Parikh, Audiologist & Speech-Language Therapist',
-    reviewer: 'Reviewed by Rajvi Vibhakar Parikh (BASLP, AYJNISHD)',
+    excerpt: 'Aphasia is an acquired language disorder that can affect speaking, understanding, reading, and writing, including after stroke.',
     clinicalSources: [
-      { title: 'National Aphasia Association — Clinical Definitions & Communication Rehabilitation' },
-      { title: 'Cochrane Neuro-rehabilitation Reviews on Speech-Language Therapy After Stroke' },
+      { title: 'ASHA — Aphasia', url: 'https://www.asha.org/practice-portal/clinical-topics/aphasia/' },
+      { title: 'Cochrane — Speech and language therapy for language problems after a stroke', url: 'https://www.cochrane.org/evidence/CD000425_speech-and-language-therapy-language-problems-after-stroke' },
     ],
     relatedServiceSlug: 'aphasia-therapy',
     keyTakeaways: [
-      'Aphasia impairs language access and retrieval, while intellectual capability remains preserved.',
+      'Aphasia primarily affects language processing; the pattern and severity of difficulties vary from person to person and can involve speaking, understanding, reading, or writing.',
       'Manifestations range from expressive word-finding difficulty to receptive comprehension challenges.',
       'Consistent practice and supportive caregiver interaction support ongoing recovery.',
       'Therapy incorporates multimodality communication including writing, gesture, and naming drills.',
