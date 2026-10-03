@@ -165,7 +165,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
                   <Link
                     href={`/${service.slug}`}
                     onNavigate={onNavigate}
-                    className="text-xs font-semibold text-slate-700 hover:text-teal-700 transition-colors inline-flex items-center gap-1"
+                    className="min-h-[44px] py-2 text-xs font-semibold text-slate-700 hover:text-teal-700 transition-colors inline-flex items-center gap-1"
                   >
                     <span>Read Details</span>
                     <ArrowRight className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" />
