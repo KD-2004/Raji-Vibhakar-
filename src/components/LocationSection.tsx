@@ -40,7 +40,7 @@ export const LocationSection: React.FC = () => {
   };
 
   return (
-    <section id="location" className="content-auto py-16 md:py-24 bg-slate-50/80 border-b border-slate-200 relative overflow-hidden">
+    <section id="location" className="py-16 md:py-24 bg-slate-50/80 border-b border-slate-200 relative overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative">
         {/* Section Header */}
         <motion.div
