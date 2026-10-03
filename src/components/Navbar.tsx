@@ -34,7 +34,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shrink-0" />
             <MapPin className="w-3.5 h-3.5 text-teal-400 shrink-0" />
             <span className="truncate">
-              Shop No. 1, Ramkunwar Thakur Marg, Dahisar East, Mumbai
+              Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, Mumbai
             </span>
             <span className="hidden md:inline text-slate-500">·</span>
             <span className="hidden md:inline text-teal-300 font-medium">Opp. Pragati Hospital</span>
