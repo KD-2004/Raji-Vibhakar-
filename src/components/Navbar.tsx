@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from '../utils/motion';
 import { Phone, Calendar, MessageCircle, Menu, X, MapPin, ExternalLink, Star, ChevronRight } from 'lucide-react';
 import { CLINIC_INFO } from '../data/clinicData';
 import { ClinicLogo } from './ClinicLogo';
