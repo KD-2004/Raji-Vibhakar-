@@ -127,7 +127,7 @@ Thank you!`;
           {/* Close Button */}
           <button
             onClick={handleResetAndClose}
-            className="absolute top-4 right-4 sm:top-5 sm:right-5 text-slate-400 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
+            className="absolute top-3 right-3 sm:top-4 sm:right-4 min-h-[44px] min-w-[44px] inline-flex items-center justify-center text-slate-500 hover:text-slate-700 p-1.5 rounded-lg hover:bg-slate-100 transition-colors cursor-pointer"
             aria-label="Close booking modal"
           >
             <X className="w-5 h-5" />
