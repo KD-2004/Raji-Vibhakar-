@@ -118,7 +118,7 @@ jobs:
           }
 
           if (violations.length) {
-            throw new Error('Production SEO validation failed:\\n' + violations.join('\\n'));
+            throw new Error('Production SEO validation failed:\n' + violations.join('\n'));
           }
 
           console.log(`Static SEO validation passed: ${urls.length} sitemap URLs, ${htmlFiles.length} HTML files.`);
