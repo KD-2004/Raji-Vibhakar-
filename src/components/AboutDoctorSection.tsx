@@ -102,7 +102,7 @@ export const AboutDoctorSection: React.FC<AboutSectionProps> = ({ onNavigate }) 
             <div className="flex items-center gap-2 text-xs font-semibold text-teal-700 tracking-wider uppercase">
               <span>Patient-Centered Clinical Care</span>
               <span aria-hidden="true">·</span>
-              <span>Dahisar East, Mumbai</span>
+              <span>Rajvi Vibhakar’s Speech &amp; Hearing</span>
             </div>
 
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight [text-wrap:balance]">
