@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from '../utils/motion';
 import { Calendar, Stethoscope, Sparkles, Phone, MessageCircle } from 'lucide-react';
 import { CLINIC_INFO, HOW_IT_WORKS_STEPS } from '../data/clinicData';
 
