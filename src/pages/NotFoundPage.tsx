@@ -13,8 +13,8 @@ interface NotFoundPageProps {
 export const NotFoundPage: React.FC<NotFoundPageProps> = ({ onNavigate, onOpenBooking }) => {
   useEffect(() => {
     updatePageMeta(
-      `Page Not Found (404) | Rajvi Vibhakar Speech & Hearing`,
-      `The page you requested could not be found. Explore audiology services, hearing assessments, and speech therapy in Dahisar East, Mumbai.`,
+      `Page Not Found (404) | Rajvi Vibhakar’s Speech & Hearing`,
+      `The page you requested could not be found. Explore audiology services, hearing assessments, and speech therapy from Rajvi Vibhakar’s Speech & Hearing Clinic.`,
       `/404`
     );
   }, []);
