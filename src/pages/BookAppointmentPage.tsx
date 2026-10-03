@@ -309,7 +309,7 @@ Thank you!`;
             <div className="p-3 rounded-xl bg-slate-50 border border-slate-200 text-[11px] text-slate-600 flex items-start gap-2">
               <Shield className="w-4 h-4 text-teal-700 shrink-0 mt-0.5" />
               <span>
-                <strong>Privacy Notice:</strong> We respect your privacy. Contact details provided in this form are used solely to coordinate your clinical consultation. We never share your information with third parties.
+                <strong>Privacy Notice:</strong> We respect your privacy. Details you provide are used to coordinate your clinic enquiry. If you choose WhatsApp, the message and information you include are transmitted through WhatsApp and are subject to WhatsApp's own terms and privacy policy.
               </span>
             </div>
 
