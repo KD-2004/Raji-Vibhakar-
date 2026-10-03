@@ -72,7 +72,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate, onOpenBooking 
           </div>
 
           <p className="text-sm sm:text-base text-slate-700 leading-relaxed">
-            Rajvi Vibhakar Parikh is an audiologist and speech-language therapist practicing in Mumbai, with structured clinical training across audiological diagnostics and speech-language therapy cases. She leads her private practice at Shop No. 1, Ramkunwar Thakur Marg, opp. Pragati Hospital, Dahisar East, Mumbai.
+            Rajvi Vibhakar Parikh is an audiologist and speech-language therapist practicing in Mumbai, with structured clinical training across audiological diagnostics and speech-language therapy cases. She leads her private practice at Shop No. 1, Rajaram Mahtre Welfare Association, R.T. Road, Dahisar East, opposite Pragati Hospital, Mumbai 400068.
           </p>
         </header>
 
