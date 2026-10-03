@@ -12,7 +12,7 @@ interface InsightsIndexPageProps {
 export const InsightsIndexPage: React.FC<InsightsIndexPageProps> = ({ onNavigate }) => {
   useEffect(() => {
     updatePageMeta(
-      `Hearing & Speech Health Insights | Dahisar East | Rajvi Vibhakar`,
+      `Hearing & Speech Health Insights | Rajvi Vibhakar`,
       `Educational articles and guidance on hearing health, childhood communication development, stuttering, and aphasia.`,
       `/insights`
     );
