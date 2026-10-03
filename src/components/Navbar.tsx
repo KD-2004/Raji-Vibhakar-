@@ -63,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
               href={`tel:${CLINIC_INFO.contact.phone}`}
               onClick={() => trackEvent('phone_click', { source: 'topbar' })}
               className="inline-flex items-center gap-1 font-semibold text-white hover:text-teal-300 transition-colors"
-              title="Call Clinic Reception"
+              title="Call Rajvi Vibhakar’s Clinic Reception"
             >
               <Phone className="w-3 h-3 text-teal-400" />
               <span>{CLINIC_INFO.contact.displayPhone}</span>
@@ -84,7 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
           <ClinicLogo size="md" priority />
           <div className="flex flex-col min-w-0">
             <span className="font-bold text-slate-900 text-sm sm:text-base md:text-lg tracking-tight group-hover:text-teal-700 transition-colors truncate">
-              <span className="sm:hidden">Rajvi Vibhakar Clinic</span>
+              <span className="sm:hidden">Rajvi Vibhakar’s Clinic</span>
               <span className="hidden sm:inline">{CLINIC_INFO.businessName}</span>
             </span>
             <span className="text-[10px] sm:text-[11px] font-medium text-teal-700 tracking-wide truncate">
@@ -135,7 +135,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
             href={`tel:${CLINIC_INFO.contact.phone}`}
             onClick={() => trackEvent('phone_click', { source: 'navbar' })}
             className="inline-flex items-center gap-1.5 px-2.5 sm:px-3 py-2 text-xs font-semibold text-slate-700 hover:text-slate-900 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors min-h-[38px]"
-            title="Call Clinic"
+            title="Call Rajvi Vibhakar’s Clinic"
           >
             <Phone className="w-3.5 h-3.5 text-teal-700 shrink-0" />
             <span className="hidden md:inline">{CLINIC_INFO.contact.displayPhone}</span>
@@ -257,7 +257,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking, onNavigate }) => 
                 className="flex items-center justify-center gap-2 py-3 px-4 rounded-xl text-xs font-semibold text-slate-800 bg-slate-100 min-h-[44px]"
               >
                 <Phone className="w-4 h-4 text-teal-700" />
-                <span>Call Clinic (+91 8898330707)</span>
+                <span>Call Rajvi Vibhakar’s Clinic (+91 8898330707)</span>
               </motion.a>
             </div>
           </motion.div>
