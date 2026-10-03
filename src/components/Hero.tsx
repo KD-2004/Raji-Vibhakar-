@@ -35,7 +35,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
       specialist: "Pediatric & Adult Fluency / Articulation / Post-Stroke",
       duration: "30–45 mins",
       badge: "MUHS State Merit Rank 1",
-      serviceName: "Speech Therapy in Dahisar East",
+      serviceName: "Speech Therapy by Rajvi Vibhakar",
       points: [
         "Child speech sound (misarticulation) & language development",
         "Stuttering / stammering modification & breathing ease",
@@ -84,7 +84,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
               <span className="inline-flex items-center gap-1.5 text-teal-700 bg-teal-50/90 px-3 py-1 rounded-full border border-teal-200/70 shadow-2xs">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
                 <MapPin className="w-3.5 h-3.5 text-teal-600 shrink-0" />
-                <span>Dahisar East, Mumbai</span>
+                <span>Rajvi Vibhakar’s Speech &amp; Hearing</span>
               </span>
               <span aria-hidden="true" className="text-slate-300">·</span>
               <a
@@ -103,7 +103,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
 
             {/* Main Headline */}
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight leading-[1.18] [text-wrap:balance]">
-              Audiologist &amp; Speech-Language Therapist in Dahisar East, Mumbai
+              Audiologist &amp; Speech-Language Therapist | Rajvi Vibhakar
             </h1>
 
             {/* Verified Business Description */}
@@ -222,7 +222,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking, onNavigate }) => {
                 <div className="space-y-1 min-w-0">
                   <div className="flex items-center gap-1.5">
                     <span className="text-[10px] sm:text-[11px] font-bold text-teal-700 uppercase tracking-wider">
-                      Dahisar East Clinic
+                      Rajvi Vibhakar’s Speech &amp; Hearing Clinic
                     </span>
                     <span aria-hidden="true" className="text-slate-300">·</span>
                     <span className="inline-flex items-center gap-1 text-[10px] sm:text-[11px] text-emerald-700 font-semibold">
